@@ -1,0 +1,13 @@
+{
+  "title": "ok",
+  "type": "object",
+  "properties": {
+    "heure": {
+      "required": false,
+      "description": "heure",
+      "fieldType": "Text",
+      "dataType": "string",
+      "title": "heure"
+    }
+  }
+}
