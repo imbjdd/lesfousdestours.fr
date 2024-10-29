@@ -4,7 +4,7 @@
   "properties": {
     "heure": {
       "required": false,
-      "description": "heure",
+      "description": "L'heure au format : 14h03",
       "fieldType": "Text",
       "dataType": "string",
       "title": "heure"
