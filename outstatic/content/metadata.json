@@ -1,6 +1,6 @@
 {
-  "commit": "0c41a440a96578e00632f49af874b064cb92c65c",
-  "generated": "2024-10-31T23:15:23.423Z",
+  "commit": "ab1801643a882a1a52e064ccc537acd085cf65f2",
+  "generated": "2024-10-31T23:15:29.671Z",
   "metadata": [
     {
       "__outstatic": {
@@ -157,8 +157,8 @@
     },
     {
       "__outstatic": {
-        "commit": "0c41a440a96578e00632f49af874b064cb92c65c",
-        "hash": "2350588780",
+        "commit": "ab1801643a882a1a52e064ccc537acd085cf65f2",
+        "hash": "2111086025",
         "path": "outstatic/content/seances-hebdomadaires/mardi-jussieu.md"
       },
       "author": {
@@ -170,7 +170,7 @@
       "description": "",
       "publishedAt": "2024-10-31T23:19:22.984Z",
       "slug": "mardi-jussieu",
-      "status": "draft",
+      "status": "published",
       "title": "Mardi Jussieu"
     }
   ]
