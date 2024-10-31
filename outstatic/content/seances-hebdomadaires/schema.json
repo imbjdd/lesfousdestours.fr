@@ -1,0 +1,13 @@
+{
+  "title": "seances-hebdomadaires",
+  "type": "object",
+  "properties": {
+    "lieu": {
+      "required": false,
+      "description": "lieu précis : exemple salle 141",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "lieu"
+    }
+  }
+}
