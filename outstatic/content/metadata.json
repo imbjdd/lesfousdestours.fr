@@ -1,6 +1,6 @@
 {
-  "commit": "f1d49d79a01c1d85981f368c71944529e6583183",
-  "generated": "2024-10-29T16:06:38.093Z",
+  "commit": "0c41a440a96578e00632f49af874b064cb92c65c",
+  "generated": "2024-10-31T23:15:23.423Z",
   "metadata": [
     {
       "__outstatic": {
@@ -154,6 +154,24 @@
       "slug": "oui",
       "status": "draft",
       "title": "oui"
+    },
+    {
+      "__outstatic": {
+        "commit": "0c41a440a96578e00632f49af874b064cb92c65c",
+        "hash": "2350588780",
+        "path": "outstatic/content/seances-hebdomadaires/mardi-jussieu.md"
+      },
+      "author": {
+        "name": "Salim",
+        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
+      },
+      "collection": "seances-hebdomadaires",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-10-31T23:19:22.984Z",
+      "slug": "mardi-jussieu",
+      "status": "draft",
+      "title": "Mardi Jussieu"
     }
   ]
 }
