@@ -7,6 +7,9 @@ author:
 slug: 'mardi-jussieu'
 description: ''
 coverImage: ''
+lieu: 'salle 141'
+startDate: '04/12/2024'
+endDate: '03/05/2025'
 publishedAt: '2024-10-31T23:19:22.984Z'
 ---
 
