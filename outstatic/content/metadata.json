@@ -1,6 +1,6 @@
 {
-  "commit": "11cb247fa1613ad01467f4838c8b23bd76fb61f0",
-  "generated": "2024-10-31T23:17:47.393Z",
+  "commit": "69a7c07a631c9265b95ff25de64e7bed79590c60",
+  "generated": "2024-10-31T23:25:54.716Z",
   "metadata": [
     {
       "__outstatic": {
@@ -157,8 +157,8 @@
     },
     {
       "__outstatic": {
-        "commit": "11cb247fa1613ad01467f4838c8b23bd76fb61f0",
-        "hash": "1495206407",
+        "commit": "69a7c07a631c9265b95ff25de64e7bed79590c60",
+        "hash": "564988285",
         "path": "outstatic/content/seances-hebdomadaires/mardi-jussieu.md"
       },
       "author": {
@@ -169,6 +169,7 @@
       "coverImage": "",
       "description": "",
       "endDate": "03/05/2025",
+      "horaire": "16h00 à 18h00",
       "lieu": "salle 141",
       "publishedAt": "2024-10-31T23:19:22.984Z",
       "slug": "mardi-jussieu",
