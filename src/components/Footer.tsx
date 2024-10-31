@@ -1,17 +1,12 @@
 const Footer = () => {
   return (
-    <footer className="bg-neutral-50 border-t border-neutral-200">
-      <div className="max-w-6xl mx-auto px-5 p-10">
+    <footer className="bg-black relative text-white h-80 overflow-hidden border-t border-neutral-200">
+      <img className="absolute bottom-0 opacity-10 left-1/2 -translate-x-1/2" src="/images/footer.png" />
+      <div className="max-w-6xl mx-auto opacity-90 px-5 p-10">
         <h3 className="font-semibold text-2xl mb-10 lg:mb-0 lg:pr-4">
-          Sample website built with{' '}
-          <a className="underline" href="https://outstatic.com/">
-            Outstatic
-          </a>{' '}
-          and{' '}
-          <a className="underline" href="https://nextjs.org/">
-            Next.js
-          </a>
+          Les Fous des Tours
         </h3>
+        <p>Association loi 1901</p>
       </div>
     </footer>
   )
