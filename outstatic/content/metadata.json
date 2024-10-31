@@ -1,6 +1,6 @@
 {
-  "commit": "69a7c07a631c9265b95ff25de64e7bed79590c60",
-  "generated": "2024-10-31T23:25:54.716Z",
+  "commit": "0e9f42f7bf6f90377981bad772698d8ce868b70c",
+  "generated": "2024-10-31T23:47:48.698Z",
   "metadata": [
     {
       "__outstatic": {
@@ -176,6 +176,28 @@
       "startDate": "04/12/2024",
       "status": "published",
       "title": "Mardi Jussieu"
+    },
+    {
+      "__outstatic": {
+        "commit": "0e9f42f7bf6f90377981bad772698d8ce868b70c",
+        "hash": "2115382934",
+        "path": "outstatic/content/seances-hebdomadaires/jeudi-jussieu.md"
+      },
+      "author": {
+        "name": "Salim",
+        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
+      },
+      "collection": "seances-hebdomadaires",
+      "coverImage": "",
+      "description": "",
+      "endDate": "31/10/2025",
+      "horaire": "18h00 à 21h00",
+      "lieu": "MVE",
+      "publishedAt": "2024-10-31T23:52:22.135Z",
+      "slug": "jeudi-jussieu",
+      "startDate": "31/10/2024",
+      "status": "draft",
+      "title": "Jeudi Jussieu"
     }
   ]
 }
