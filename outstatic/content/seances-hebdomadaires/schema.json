@@ -8,6 +8,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "lieu"
+    },
+    "startDate": {
+      "required": false,
+      "description": "date à partir de laquelle ça commence",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "startDate"
     }
   }
 }
