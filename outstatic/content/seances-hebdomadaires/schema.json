@@ -15,6 +15,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "startDate"
+    },
+    "endDate": {
+      "required": false,
+      "description": "date de quand ça finit",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "EndDate"
     }
   }
 }
