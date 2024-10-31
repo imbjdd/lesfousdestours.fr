@@ -1,6 +1,6 @@
 ---
 title: 'Jeudi Jussieu'
-status: 'draft'
+status: 'published'
 author:
   name: 'Salim'
   picture: 'https://avatars.githubusercontent.com/u/56689216?v=4'
