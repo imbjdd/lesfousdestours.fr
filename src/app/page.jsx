@@ -1,12 +1,13 @@
 import Layout from '../components/Layout'
-import { load } from 'outstatic/server'
+import { load, getDocuments } from 'outstatic/server'
 import ContentGrid from '../components/ContentGrid'
 import markdownToHtml from '../lib/markdownToHtml'
 import Header from '@/components/Header'
 import { DateTime } from 'luxon'
+import Link from 'next/link'
 
 export default async function Index() {
-  const { content, allPosts, allProjects } = await getData()
+//  const { content, allPosts, allProjects } = await getData()
 /*  const events = [{
     title: 'Séance hebdomadaire',
     place: 'Clignancourt',
@@ -33,6 +34,8 @@ export default async function Index() {
     date: '17h00 à 19h00'
   }]
 */
+  const seances_data = await getData()
+
   const day_to_number = {
     'lundi': 1,
     'mardi': 2,
@@ -43,7 +46,7 @@ export default async function Index() {
     'dimanche' : 7
   }
 
-  const seances_hebdomadaires = [
+/*  const seances_hebdomadaires = [
     {
       jour: 'mardi',
       beginHour: '17h00',
@@ -55,15 +58,26 @@ export default async function Index() {
       endHour: '19h00'
     }
   ]
-
+*/
   function nextSeances() {
     const dates = []
-    for(const seance of seances_hebdomadaires) {
-      const today = DateTime.now().weekday
+    for(const seance of seances_data) {
+      // pour savoir si on part de DateTime.now() ou bien plutôt de startDate, on part du maximum entre les deux
+      let date_used;
+      if(DateTime.now().toISO() > DateTime.fromFormat(seance.startDate, "dd/LL/yyyy").toISO()) {
+        date_used = DateTime.now()
+      }
+      else {
+        date_used = DateTime.fromFormat(seance.startDate, "dd/LL/yyyy")
+      }
+
+      const today = date_used.weekday
       const jour = seance.jour
       const days_until = (day_to_number[jour] - today + 7) % 7;
-      for(let i = 0; i < 4; i++) {
-        const date = DateTime.now().plus({days: days_until + 7*i})
+
+
+      for(let i = 0; i < 8; i++) {
+        const date = date_used.plus({days: days_until + 7*i})
         dates.push({
           title: 'Séance hebdomadaire',
           place: 'Jussieu',
@@ -83,80 +97,83 @@ export default async function Index() {
       <div className="max-w-7xl mx-auto px-5">
         <Header /> 
 
-        <section className="mt-16 mb-4 pt-24">
-          <div class="flex">
-            <div className="w-7/12 flex flex-col gap-8">
-              <h1 className="text-8xl font-black">Les Fous des Tours</h1>
-              <p>{DateTime.fromObject({day: 22, hour: 12 }, { zone: 'Europe/Paris'})}</p>
-              <p>{nextSeances().map(x => x.jour).join(' ')}</p>
-              <p>Les Fous Des Tours est l'assocation universitaire d'échecs et de jeux de plateaux de Sorbonne Université. Nous avons pour but de promouvoir et de faire découvrir le jeu d'échecs et d'autres  jeux comme le Go, Shogi,... sur les différents campus de SU.
-  De ce fait, nos séances sont ouvertes aux joueurs de tous les niveaux, des maitres aux grands débutants (les membres de l'association se chargeant souvent d'initier les nouveaux arrivants aux échecs, GO,..) De plus l'accès à nos séances est gratuit et ouvert à tous les étudiants et au personnel de SU.</p>
-              <button className="w-fit px-8 py-3 bg-black text-white rounded-lg">Nous rejoindre</button>
+        <section className="mt-8 lg:mt-16 mb-4 lg:pt-24">
+          <div class="flex flex-col lg:flex-row gap-4 lg:gap-0">
+            <div className="lg:w-7/12 flex flex-col gap-8">
+              <h1 className="text-4xl lg:text-8xl font-black">Les Fous des Tours</h1>
+              <div className="prose lg:prose-xl">
+                <p>Les Fous Des Tours est l'assocation universitaire d'échecs et de jeux de plateaux de Sorbonne Université. Nous avons pour but de promouvoir et de faire découvrir le jeu d'échecs sur les différents campus de SU.
+    De ce fait, nos séances sont ouvertes aux joueurs de tous les niveaux. De plus l'accès à nos séances est gratuit et ouvert à tous les étudiants et au personnel de SU.</p>
+              </div>
+              <button className="w-full lg:w-fit px-8 py-3 bg-black text-white rounded-lg hover:bg-zinc-800">Nous rejoindre</button>
             </div>
             <div className="flex-grow"></div>
-            <div className="">
+            <div className="hidden lg:block">
               <img src="/images/lfdt.png"/>
             </div>
           </div>
-          <div className="mt-24 flex"> 
-            <p className=" text-5xl font-semibold">Nos prochaines séances & événements</p>
+          <div className="mt-8 lg:mt-24 flex flex-col lg:flex-row"> 
+            <div className="prose lg:prose-xl">
+              <h2>Nos prochaines séances & événements</h2>
+            </div>
             <div className="grow"></div>
-            <p className="mt-4">Voir tous nos événements</p>
+            <p className="mt-4 hover:underline"><Link href="/evenements">Voir tous nos événements</Link></p>
           </div>
         </section>
       </div>
 
       <section className="px-5">
-        <div className="flex gap-4 [&>*:nth-child(n+7)]:hidden">
+        <div className="flex flex-col lg:flex-row gap-4 [&>*:nth-child(n+5)]:hidden">
         {events.map(event => (
-          <div className=" flex flex-col bg-[#E9D056] flex-grow w-fit p-4 rounded-lg">
+          <div className=" flex w-full text-xl flex-col bg-[#E9D056] hover:bg-[#ebd567] flex-grow lg:w-fit p-4 rounded-lg">
             <p className="font-bold">{event.title}</p>
             <p>{event.place}</p>
+            <p>{event.jour} {DateTime.fromISO(event.iso).setLocale('fr').toLocaleString({month: 'long', day: 'numeric'})}</p>
             <p>{event.date}</p>
           </div>
         ))}
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-5 py-24 flex flex-col gap-24">
-        <div className="flex odd:flex-row-reverse">
-          <div className="w-1/2 flex flex-col gap-4">
-            <p className="text-4xl font-semibold">Tournoi Inter-universitaire</p>
+      <div className="max-w-7xl mx-auto px-5 py-24 flex flex-col gap-8 lg:gap-24">
+        <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
+          <div className="lg:w-1/2 prose lg:prose-xl">
+            <h3>Tournoi Inter-universitaire</h3>
             <p>Chaque année nous organisons un tournoi inter-universitaire qui réunit une petite dizaine d’écoles et universités. Chaque école participante ramène une équipe composé de 4 joueurs.</p>
           </div>
-          <div className="flex-grow"></div>
-          <div className="w-5/12">
-            <img src="/images/tournoi.png"/>
+          <div className="hidden lg:block lg:flex-grow"></div>
+          <div className="lg:w-5/12">
+            <img className="hover:rotate-3 transition ease-in-out duration-300" src="/images/tournoi.png"/>
           </div>
         </div>
-        <div className="flex odd:flex-row-reverse">
-          <div className="w-1/2 flex flex-col gap-4">
-            <p className="text-4xl font-semibold">Séances hebdomadaires</p>
+        <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
+          <div className="lg:w-1/2 prose lg:prose-xl">
+            <h3>Séances hebdomadaires</h3>
             <p>Chaque année nous organisons un tournoi inter-universitaire qui réunit une petite dizaine d’écoles et universités. Chaque école participante ramène une équipe composé de 4 joueurs.</p>
           </div>
-          <div className="flex-grow"></div>
-          <div className="w-5/12">
-            <img src="/images/tournoi.png"/>
+          <div className="hidden lg:block lg:flex-grow"></div>
+          <div className="lg:w-5/12">
+            <img className="hover:rotate-3 transition ease-in-out duration-300" src="/images/tournoi.png"/>
           </div>
         </div>
-        <div className="flex odd:flex-row-reverse">
-          <div className="w-1/2 flex flex-col gap-4">
-            <p className="text-4xl font-semibold">Bar échecs</p>
+        <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
+          <div className="lg:w-1/2 prose lg:prose-xl">
+            <h3>Bar-échecs</h3>
             <p>Chaque année nous organisons un tournoi inter-universitaire qui réunit une petite dizaine d’écoles et universités. Chaque école participante ramène une équipe composé de 4 joueurs.</p>
           </div>
-          <div className="flex-grow"></div>
-          <div className="w-5/12">
-            <img src="/images/tournoi.png"/>
+          <div className="hidden lg:block lg:flex-grow"></div>
+          <div className="lg:w-5/12">
+            <img className="hover:rotate-3 transition ease-in-out duration-300" src="/images/tournoi.png"/>
           </div>
         </div>
-        <div className="flex odd:flex-row-reverse">
-          <div className="w-1/2 flex flex-col gap-4">
-            <p className="text-4xl font-semibold">Tournois internes</p>
+         <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
+          <div className="lg:w-1/2 prose lg:prose-xl">
+            <h3>Tournois internes</h3>
             <p>Chaque année nous organisons un tournoi inter-universitaire qui réunit une petite dizaine d’écoles et universités. Chaque école participante ramène une équipe composé de 4 joueurs.</p>
           </div>
-          <div className="flex-grow"></div>
-          <div className="w-5/12">
-            <img src="/images/tournoi.png"/>
+          <div className="hidden lg:block lg:flex-grow"></div>
+          <div className="lg:w-5/12">
+            <img className="hover:rotate-3 transition ease-in-out duration-300" src="/images/tournoi.png"/>
           </div>
         </div>
       </div>
@@ -190,6 +207,23 @@ export default async function Index() {
 async function getData() {
   const db = await load()
 
+  const posts = getDocuments('seances-hebdomadaires', ['title', 'content', 'lieu', 'startDate', 'endDate', 'horaire'])
+  console.log('#'.repeat(400))
+  console.log(posts)
+  const processing = posts.map(x => {
+    x.jour = x.title.split(' ')[0].toLowerCase()
+    x.place = x.title.split(' ').slice(1).join(' ')
+    return x
+  })
+  console.log(processing)
+  return processing
+}
+
+
+/*
+async function getData() {
+  const db = await load()
+
   const page = await db
     .find({ collection: 'pages', slug: 'home' }, ['content'])
     .first()
@@ -218,4 +252,5 @@ async function getData() {
     allPosts,
     allProjects
   }
-}
+}*/
+

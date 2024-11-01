@@ -5,23 +5,23 @@ import '../styles/index.css'
 export const metadata: Metadata = {
   metadataBase: new URL('https://outstatic.com'),
   title: {
-    default: 'Outstatic',
-    template: '%s | Outstatic'
+    default: 'Les Fous des Tours',
+    template: '%s | Les Fous des Tours'
   },
-  description: 'A blog starter built with Outstatic.',
+  description: 'Les Fous Des Tours est l\'association universitaire d\'échecs et de jeux de plateau de Sorbonne Université. ',
   openGraph: {
-    title: 'Outstatic - A Static Site CMS for Next.js',
+    title: 'Les fous des Tours',
     description: 'A blog starter built with Outstatic.',
     url: absoluteUrl('/'),
     siteName: 'Next.js',
     images: [
       {
-        url: absoluteUrl('/images/og-image.png'),
-        width: 1800,
-        height: 1600
+        url: absoluteUrl('/images/lfdt.png'), 
+        width: 350,
+        height: 397
       }
     ],
-    locale: 'en_US',
+    locale: 'fr_FR',
     type: 'website'
   },
   icons: {
