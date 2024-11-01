@@ -105,7 +105,7 @@ export default async function Index() {
                 <p>Les Fous Des Tours est l'assocation universitaire d'échecs et de jeux de plateaux de Sorbonne Université. Nous avons pour but de promouvoir et de faire découvrir le jeu d'échecs sur les différents campus de SU.
     De ce fait, nos séances sont ouvertes aux joueurs de tous les niveaux. De plus l'accès à nos séances est gratuit et ouvert à tous les étudiants et au personnel de SU.</p>
               </div>
-              <button className="w-full lg:w-fit px-8 py-3 bg-black text-white rounded-lg hover:bg-zinc-800">Nous rejoindre</button>
+              <a href="#nous-rejoindre"><button className="w-full lg:w-fit px-8 py-3 bg-black text-white rounded-lg hover:bg-zinc-800">Nous rejoindre</button></a>
             </div>
             <div className="flex-grow"></div>
             <div className="hidden lg:block">
@@ -114,7 +114,7 @@ export default async function Index() {
           </div>
           <div className="mt-8 lg:mt-24 flex flex-col lg:flex-row"> 
             <div className="prose lg:prose-xl">
-              <h2>Nos prochaines séances & événements</h2>
+              <h2 id="nous-rejoindre">Nos prochaines séances & événements</h2>
             </div>
             <div className="grow"></div>
             <p className="mt-4 hover:underline"><Link href="/evenements">Voir tous nos événements</Link></p>

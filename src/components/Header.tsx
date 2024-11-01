@@ -26,9 +26,6 @@ const Header = () => {
         <Link href="/evenements" className="hover:underline">
           Evenements
         </Link>
-        <Link href="/#projects" className="hover:underline">
-          Tournoi inter-universitaire
-        </Link>
       </div>
       <div className="lg:hidden"  >
         <a href="#" onClick={handleClick}><Menu size={24}/></a>
@@ -58,13 +55,6 @@ const Header = () => {
               <div className="py-2 border-b-2 border-[#E9D056]">
                 <p className="text-xl font-semibold">
                   Evenements
-                </p>
-              </div>
-            </Link>
-            <Link href="/#projects" className="hover:underline">
-              <div className="py-2 border-b-2 border-[#E9D056]">
-                <p className="text-xl font-semibold">
-                  Tournoi inter-universitaire
                 </p>
               </div>
             </Link>
