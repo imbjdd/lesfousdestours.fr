@@ -10,6 +10,8 @@ coverImage: ''
 publishedAt: '2024-11-01T15:55:28.203Z'
 ---
 
+# A propos
+
 **Les Fous Des Tours** est l'association universitaire d'échecs et de jeux de plateau de Sorbonne Université. Notre mission est de promouvoir et faire découvrir le jeu d'échecs et d'autres jeux comme le Go et le Shogi sur les différents campus de SU. Nos séances sont ouvertes à tous les niveaux, des maîtres aux grands débutants. Les membres de l'association se chargent souvent d'initier les nouveaux arrivants, qu’ils soient intéressés par les échecs, le Go, ou d’autres jeux.
 
 L'accès à nos séances est gratuit et ouvert à tous les étudiants et au personnel de SU.
