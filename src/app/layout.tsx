@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: 'Les Fous des Tours',
     images: [
       {
-        url: 'https://lfdt.vercel.app/images/tags.png', 
+        url: 'https://lfdt.vercel.app/images/tags_update.png', 
         width: 1200, 
         height: 630
       }
