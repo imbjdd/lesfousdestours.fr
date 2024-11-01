@@ -10,20 +10,21 @@ export const metadata: Metadata = {
   },
   description: 'Les Fous Des Tours est l\'association universitaire d\'échecs et de jeux de plateau de Sorbonne Université.',
   openGraph: {
-    title: 'Les fous des Tours',
+    title: 'Les Fous des Tours',
     description: 'Les Fous Des Tours est l\'association universitaire d\'échecs et de jeux de plateau de Sorbonne Université.',
     url: absoluteUrl('/'),
     siteName: 'Les Fous des Tours',
     images: [
       {
         url: absoluteUrl('/images/lfdt.png'), 
-        width: 400,
-        height: 400
+        width: 512, 
+        height: 512
       }
     ],
     locale: 'fr_FR',
     type: 'website'
   },
+  themeColor: '#E9D056',
   icons: {
     icon: [{ url: '/favicon/favicon-32x32.png' }],
     apple: [{ url: '/favicon/apple-touch-icon.png' }]
