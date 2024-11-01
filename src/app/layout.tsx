@@ -3,22 +3,22 @@ import { Metadata } from 'next'
 import '../styles/index.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://outstatic.com'),
+  metadataBase: new URL('https://lfdt.vercel.app'),
   title: {
     default: 'Les Fous des Tours',
     template: '%s | Les Fous des Tours'
   },
-  description: 'Les Fous Des Tours est l\'association universitaire d\'échecs et de jeux de plateau de Sorbonne Université. ',
+  description: 'Les Fous Des Tours est l\'association universitaire d\'échecs et de jeux de plateau de Sorbonne Université.',
   openGraph: {
     title: 'Les fous des Tours',
-    description: 'A blog starter built with Outstatic.',
+    description: 'Les Fous Des Tours est l\'association universitaire d\'échecs et de jeux de plateau de Sorbonne Université.',
     url: absoluteUrl('/'),
-    siteName: 'Next.js',
+    siteName: 'Les Fous des Tours',
     images: [
       {
         url: absoluteUrl('/images/lfdt.png'), 
-        width: 350,
-        height: 397
+        width: 400,
+        height: 400
       }
     ],
     locale: 'fr_FR',
