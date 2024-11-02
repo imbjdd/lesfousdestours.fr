@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
+
+@font-face {
+  font-family: 'Super';
+  src: url('/fonts/Wendy_One/WendyOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .home-intro p {
   @apply text-2xl font-semibold leading-9;
+}
+
+h1, h2, h3 {
+  font-family: 'Super';
 }
