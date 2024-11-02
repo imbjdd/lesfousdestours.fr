@@ -100,7 +100,7 @@ export default async function Index() {
         <section className="mt-8 lg:mt-16 mb-4 lg:pt-24">
           <div class="flex flex-col lg:flex-row gap-4 lg:gap-0">
             <div className="lg:w-7/12 flex flex-col gap-8">
-              <h1 className="text-4xl lg:text-8xl font-black">Les Fous des Tours</h1>
+              <h1 className="text-4xl lg:text-8xl  font-super">Les Fous des Tours</h1>
               <div className="prose lg:prose-xl">
                 <p>Les Fous Des Tours est l'assocation universitaire d'échecs et de jeux de plateaux de Sorbonne Université. Nous avons pour but de promouvoir et de faire découvrir le jeu d'échecs sur les différents campus de SU.
     De ce fait, nos séances sont ouvertes aux joueurs de tous les niveaux. De plus l'accès à nos séances est gratuit et ouvert à tous les étudiants et au personnel de SU.</p>
@@ -109,7 +109,7 @@ export default async function Index() {
             </div>
             <div className="flex-grow"></div>
             <div className="hidden lg:block">
-              <img src="/images/lfdt.png"/>
+              <img className="hover:scale-110 hover:rotate-12 transition ease-in-out" src="/images/lfdt.png"/>
             </div>
           </div>
           <div className="mt-8 lg:mt-24 flex flex-col lg:flex-row"> 
@@ -143,37 +143,37 @@ export default async function Index() {
           </div>
           <div className="hidden lg:block lg:flex-grow"></div>
           <div className="lg:w-5/12">
-            <img className="hover:rotate-3 transition ease-in-out duration-300" src="/images/tournoi.png"/>
+            <img className="hover:rotate-3 transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/tournoi.png"/>
           </div>
         </div>
         <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
           <div className="lg:w-1/2 prose lg:prose-xl">
             <h3>Séances hebdomadaires</h3>
-            <p>Chaque année nous organisons un tournoi inter-universitaire qui réunit une petite dizaine d’écoles et universités. Chaque école participante ramène une équipe composé de 4 joueurs.</p>
+            <p>Chaque semaine, nous organisons des séances sur les différents campus. Les séances sont libres. Aucune inscription n'est nécessaire et tout membre de Sorbonne Université peut y assister.</p>
           </div>
           <div className="hidden lg:block lg:flex-grow"></div>
           <div className="lg:w-5/12">
-            <img className="hover:rotate-3 transition ease-in-out duration-300" src="/images/tournoi.png"/>
+            <img className="hover:rotate-3 transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/hebdo.jpg"/>
           </div>
         </div>
         <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
           <div className="lg:w-1/2 prose lg:prose-xl">
-            <h3>Bar-échecs</h3>
-            <p>Chaque année nous organisons un tournoi inter-universitaire qui réunit une petite dizaine d’écoles et universités. Chaque école participante ramène une équipe composé de 4 joueurs.</p>
+            <h3>Bar échecs</h3>
+            <p>Durant les vacances, nous organisons souvent des bar-échecs. Cela consiste à jouer aux échecs dans un bar. Le cadre y est plus convivial.</p>
           </div>
           <div className="hidden lg:block lg:flex-grow"></div>
           <div className="lg:w-5/12">
-            <img className="hover:rotate-3 transition ease-in-out duration-300" src="/images/tournoi.png"/>
+            <img className="hover:rotate-3 transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/bar.jpg"/>
           </div>
         </div>
          <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
           <div className="lg:w-1/2 prose lg:prose-xl">
             <h3>Tournois internes</h3>
-            <p>Chaque année nous organisons un tournoi inter-universitaire qui réunit une petite dizaine d’écoles et universités. Chaque école participante ramène une équipe composé de 4 joueurs.</p>
+            <p>Les tournois internes sont réservés aux membres de Sorbonne Université et sont individuels et non-homologués. Nous en organisons deux chaque année.</p>
           </div>
           <div className="hidden lg:block lg:flex-grow"></div>
           <div className="lg:w-5/12">
-            <img className="hover:rotate-3 transition ease-in-out duration-300" src="/images/tournoi.png"/>
+            <img className="hover:rotate-3 transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/tournoi_semestre.jpg"/>
           </div>
         </div>
       </div>

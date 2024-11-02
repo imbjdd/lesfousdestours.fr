@@ -15,8 +15,8 @@ const Header = () => {
     <nav className="layout flex items-center text-lg justify-between pt-8 w-full">
       <Link href="/" className="hover:underline">
         <div className="flex gap-4 justify-center items-center">
-          <img height={48} width={48} src="/images/lfdt.png"/>
-          <p className="h-fit font-black">Les Fous des Tours</p>
+          <img className="hover:rotate-180 transition ease-in-out duration-300" height={48} width={48} src="/images/lfdt.png"/>
+          <p className="h-fit font-super text-2xl">Les Fous des Tours</p>
         </div>
       </Link>
       <div className="hidden lg:flex justify-between space-x-4">
@@ -35,8 +35,8 @@ const Header = () => {
           <nav className="layout flex items-center text-black text-lg justify-between pt-8 w-full">
             <Link href="/" className="hover:underline">
               <div className="flex gap-4 justify-center items-center">
-                <img height={48} width={48} src="/images/lfdt.png"/>
-                <p className="h-fit font-black">Les Fous des Tours</p>
+                <img className="hover:rotate-180 transition ease-in-out duration-300" height={48} width={48} src="/images/lfdt.png"/>
+                <p className="h-fit font-super text-2xl">Les Fous des Tours</p>
               </div>
             </Link>
             <div className="lg:hidden"  >
