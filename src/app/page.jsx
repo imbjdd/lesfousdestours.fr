@@ -80,7 +80,8 @@ export default async function Index() {
         const date = date_used.plus({days: days_until + 7*i})
         dates.push({
           title: 'Séance hebdomadaire',
-          place: 'Jussieu',
+          place: seance.place,
+          lieu: seance.lieu,
           jour: seance.jour,
           date: '17h00 à 19h00',
           iso: date.toISO()
@@ -126,7 +127,7 @@ export default async function Index() {
         {events.map(event => (
           <div className=" flex w-full text-xl flex-col bg-[#E9D056] hover:bg-[#ebd567] flex-grow lg:w-fit p-4 rounded-lg">
             <p className="font-bold">{event.title}</p>
-            <p>{event.place}</p>
+            <p>{event.place}, {event.lieu}</p>
             <p>{event.jour} {DateTime.fromISO(event.iso).setLocale('fr').toLocaleString({month: 'long', day: 'numeric'})}</p>
             <p>{event.date}</p>
           </div>
