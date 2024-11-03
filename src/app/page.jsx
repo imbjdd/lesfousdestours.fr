@@ -102,8 +102,7 @@ export default async function Index() {
             <div className="lg:w-7/12 flex flex-col gap-8">
               <h1 className="text-4xl lg:text-8xl  font-super">Les Fous des Tours</h1>
               <div className="prose lg:prose-xl">
-                <p>Les Fous Des Tours est l'assocation universitaire d'échecs et de jeux de plateaux de Sorbonne Université. Nous avons pour but de promouvoir et de faire découvrir le jeu d'échecs sur les différents campus de SU.
-    De ce fait, nos séances sont ouvertes aux joueurs de tous les niveaux. De plus l'accès à nos séances est gratuit et ouvert à tous les étudiants et au personnel de SU.</p>
+                <p>Les Fous des Tours est l’association d’échecs et de jeux de plateaux de Sorbonne Université. Nous invitons étudiants et personnels de tous niveaux à explorer le jeu d’échecs dans une ambiance conviviale et gratuite.</p>
               </div>
               <a href="#nous-rejoindre"><button className="w-full lg:w-fit px-8 py-3 bg-black text-white rounded-lg hover:bg-zinc-800">Nous rejoindre</button></a>
             </div>
