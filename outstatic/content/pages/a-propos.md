@@ -19,3 +19,13 @@ L'accès à nos séances est gratuit et ouvert à tous les étudiants et au pers
 ## 🎯 Notre Mission
 
 Nous souhaitons transmettre la passion des jeux de stratégie, créer une communauté accueillante et encourager le partage d'expérience et d'idées autour des jeux de réflexion.
+
+## 🏆 Notre Bureau
+
+Notre bureau est composé de :
+
+- Un **président**, accompagné d'un **vice-président**,
+- Un **trésorier**, accompagné d'un ou deux **vice-trésoriers**,
+- Un **secrétaire général**,
+- Des **responsables campus**,
+- Des **secrétaires** dont le but est de réaliser diverses tâches, selon le pôle (design, communication) auxquels ils appartiennent.
