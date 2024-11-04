@@ -1,6 +1,6 @@
 {
-  "commit": "3c61f9b132fa310b64ebc882ef594e8114d553c2",
-  "generated": "2024-11-04T00:47:10.979Z",
+  "commit": "1ca58539f6e9883a7fc51f7738413145c17a8938",
+  "generated": "2024-11-04T00:52:50.200Z",
   "metadata": [
     {
       "__outstatic": {
@@ -221,6 +221,26 @@
       "tags": [
       ],
       "title": "Test "
+    },
+    {
+      "__outstatic": {
+        "commit": "1ca58539f6e9883a7fc51f7738413145c17a8938",
+        "hash": "756994139",
+        "path": "outstatic/content/posts/test-2.md"
+      },
+      "author": {
+        "name": "Salim",
+        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/img_1816-Y0Nj.jpg",
+      "description": "Test 2",
+      "publishedAt": "2024-11-04T00:58:22.701Z",
+      "slug": "test-2",
+      "status": "published",
+      "tags": [
+      ],
+      "title": "Test 2"
     }
   ]
 }
