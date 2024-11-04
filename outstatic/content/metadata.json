@@ -1,25 +1,7 @@
 {
-  "commit": "55f3f5e368d371047203bbe36b331b0c13525f98",
-  "generated": "2024-11-04T00:56:08.747Z",
+  "commit": "6970666b2766b02a05064009b015f373bbfff8ca",
+  "generated": "Mon, 04 Nov 2024 00:59:23 GMT",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "e086ec057776f1deb4563f9d6f47c7fbf3916ea3",
-        "hash": "1009154148",
-        "path": "outstatic/content/pages/a-propos.md"
-      },
-      "author": {
-        "name": "Salim",
-        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
-      },
-      "collection": "pages",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-11-01T15:55:28.203Z",
-      "slug": "a-propos",
-      "status": "draft",
-      "title": "a-propos"
-    },
     {
       "__outstatic": {
         "commit": "caeb954ea1579e04b6b74c80ddf718e56c60a67d",
@@ -36,26 +18,6 @@
       "slug": "bearbnb",
       "status": "published",
       "title": " 🧸 Bearbnb"
-    },
-    {
-      "__outstatic": {
-        "commit": "c5f20b987b1da4c8e3881d8e10253f14839d766f",
-        "hash": "3371608301",
-        "path": "outstatic/content/posts/test.md"
-      },
-      "author": {
-        "name": "Salim",
-        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/fc610ffac03bcaad6480bab358b48b63-QxOD.png",
-      "description": "test",
-      "publishedAt": "2024-11-04T00:52:24.149Z",
-      "slug": "test",
-      "status": "published",
-      "tags": [
-      ],
-      "title": "Test "
     },
     {
       "__outstatic": {
@@ -95,6 +57,41 @@
     },
     {
       "__outstatic": {
+        "commit": "e086ec057776f1deb4563f9d6f47c7fbf3916ea3",
+        "hash": "1009154148",
+        "path": "outstatic/content/pages/a-propos.md"
+      },
+      "author": {
+        "name": "Salim",
+        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
+      },
+      "collection": "pages",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-11-01T15:55:28.203Z",
+      "slug": "a-propos",
+      "status": "draft",
+      "title": "a-propos"
+    },
+    {
+      "__outstatic": {
+        "commit": "aa1f387e5c66347e675bed0862b070d8946c95f4",
+        "hash": "1055690014",
+        "path": "outstatic/content/projects/couple-pizza.md"
+      },
+      "author": {
+        "name": "Bob Marley"
+      },
+      "collection": "projects",
+      "coverImage": "/images/couple-pizza.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "publishedAt": "2022-03-16T05:35:07.322Z",
+      "slug": "couple-pizza",
+      "status": "published",
+      "title": "Couple Pizza"
+    },
+    {
+      "__outstatic": {
         "commit": "646d0eb7b6dd835d696c4717fcc3435badfcd279",
         "hash": "564988285",
         "path": "outstatic/content/seances-hebdomadaires/mardi-jussieu.md"
@@ -114,24 +111,6 @@
       "startDate": "04/12/2024",
       "status": "published",
       "title": "Mardi Jussieu"
-    },
-    {
-      "__outstatic": {
-        "commit": "2feff08378716c40011618e5f95549c9d2b075c4",
-        "hash": "182833262",
-        "path": "outstatic/content/projects/oui.md"
-      },
-      "author": {
-        "name": "Salim",
-        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
-      },
-      "collection": "projects",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-10-29T16:12:30.586Z",
-      "slug": "oui",
-      "status": "draft",
-      "title": "oui"
     },
     {
       "__outstatic": {
@@ -157,6 +136,24 @@
     },
     {
       "__outstatic": {
+        "commit": "2feff08378716c40011618e5f95549c9d2b075c4",
+        "hash": "182833262",
+        "path": "outstatic/content/projects/oui.md"
+      },
+      "author": {
+        "name": "Salim",
+        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
+      },
+      "collection": "projects",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-10-29T16:12:30.586Z",
+      "slug": "oui",
+      "status": "draft",
+      "title": "oui"
+    },
+    {
+      "__outstatic": {
         "commit": "b22b0f4f3d38a659cbab9b89ac2b7394f2446de4",
         "hash": "425893791",
         "path": "outstatic/content/projects/flycream-travel.md"
@@ -172,23 +169,6 @@
       "slug": "flycream-travel",
       "status": "published",
       "title": "Flycream Travel"
-    },
-    {
-      "__outstatic": {
-        "commit": "aa1f387e5c66347e675bed0862b070d8946c95f4",
-        "hash": "1055690014",
-        "path": "outstatic/content/projects/couple-pizza.md"
-      },
-      "author": {
-        "name": "Bob Marley"
-      },
-      "collection": "projects",
-      "coverImage": "/images/couple-pizza.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "publishedAt": "2022-03-16T05:35:07.322Z",
-      "slug": "couple-pizza",
-      "status": "published",
-      "title": "Couple Pizza"
     }
   ]
 }
