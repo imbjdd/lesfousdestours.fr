@@ -1,12 +1,105 @@
 {
-  "commit": "1ca58539f6e9883a7fc51f7738413145c17a8938",
-  "generated": "2024-11-04T00:52:50.200Z",
+  "commit": "08daf66546afab441ba8b7817d29eac025b19796",
+  "generated": "Mon, 04 Nov 2024 00:54:18 GMT",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "e086ec057776f1deb4563f9d6f47c7fbf3916ea3",
+        "hash": "1009154148",
+        "path": "outstatic/content/pages/a-propos.md"
+      },
+      "author": {
+        "name": "Salim",
+        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
+      },
+      "collection": "pages",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-11-01T15:55:28.203Z",
+      "slug": "a-propos",
+      "status": "draft",
+      "title": "a-propos"
+    },
+    {
+      "__outstatic": {
+        "commit": "5ce813cc98c24900bec4749403516a233b4abf74",
+        "hash": "756994139",
+        "path": "outstatic/content/posts/test-2.md"
+      },
+      "author": {
+        "name": "Salim",
+        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/img_1816-Y0Nj.jpg",
+      "description": "Test 2",
+      "publishedAt": "2024-11-04T00:58:22.701Z",
+      "slug": "test-2",
+      "status": "published",
+      "tags": [
+      ],
+      "title": "Test 2"
+    },
+    {
+      "__outstatic": {
+        "commit": "caeb954ea1579e04b6b74c80ddf718e56c60a67d",
+        "hash": "1076515129",
+        "path": "outstatic/content/projects/bearbnb.md"
+      },
+      "author": {
+        "name": "Andre Vitorio"
+      },
+      "collection": "projects",
+      "coverImage": "/images/bearbnb.png",
+      "description": "Amazing rental locations for your teddy bear.",
+      "publishedAt": "2022-03-17T05:35:07.322Z",
+      "slug": "bearbnb",
+      "status": "published",
+      "title": " 🧸 Bearbnb"
+    },
+    {
+      "__outstatic": {
+        "commit": "c5f20b987b1da4c8e3881d8e10253f14839d766f",
+        "hash": "3371608301",
+        "path": "outstatic/content/posts/test.md"
+      },
+      "author": {
+        "name": "Salim",
+        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/fc610ffac03bcaad6480bab358b48b63-QxOD.png",
+      "description": "test",
+      "publishedAt": "2024-11-04T00:52:24.149Z",
+      "slug": "test",
+      "status": "published",
+      "tags": [
+      ],
+      "title": "Test "
+    },
+    {
+      "__outstatic": {
+        "commit": "7d2808dfa04d62630671cb16a9f9d15b678fdf71",
+        "hash": "3531910027",
+        "path": "outstatic/content/posts/nothing-wrong.md"
+      },
+      "author": {
+        "name": "Andre Vitorio"
+      },
+      "collection": "posts",
+      "coverImage": "/images/whatsapp-image-2024-10-28-at-14.11.18-1--ExOD.jpeg",
+      "description": "N'hésitez pas à venir !",
+      "publishedAt": "2022-09-14T17:55:40.452Z",
+      "slug": "nothing-wrong",
+      "status": "published",
+      "tags": "",
+      "title": "Nos séances bar échecs commencent"
+    },
     {
       "__outstatic": {
         "commit": "2e47122b5b6d49d6d1ddb15bcd33edc4a0c1256e",
         "hash": "217348983",
-        "path": "/outstatic/content/pages/home.md"
+        "path": "outstatic/content/pages/home.md"
       },
       "author": {
         "name": "Andre Vitorio",
@@ -22,108 +115,7 @@
     },
     {
       "__outstatic": {
-        "commit": "bf4993b965319da4cb9de4a3810fb4af12bdebd6",
-        "hash": "2596208214",
-        "path": "/outstatic/content/posts/how-to-create-an-outstatic-blog.md"
-      },
-      "author": {
-        "name": "Andre Vitorio"
-      },
-      "collection": "posts",
-      "coverImage": "/images/jupiter-spaceship.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "publishedAt": "2022-07-14T02:34:02.322Z",
-      "slug": "how-to-create-an-outstatic-blog",
-      "status": "published",
-      "tags": [
-        {
-          "label": "NextJs",
-          "value": "nextJs"
-        },
-        {
-          "label": "GitHub",
-          "value": "gitHub"
-        },
-        {
-          "label": "Outstatic",
-          "value": "outstatic"
-        }
-      ],
-      "title": "Learn how to create your blog with Outstatic"
-    },
-    {
-      "__outstatic": {
-        "commit": "aa1f387e5c66347e675bed0862b070d8946c95f4",
-        "hash": "1055690014",
-        "path": "/outstatic/content/projects/couple-pizza.md"
-      },
-      "author": {
-        "name": "Bob Marley"
-      },
-      "collection": "projects",
-      "coverImage": "/images/couple-pizza.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "publishedAt": "2022-03-16T05:35:07.322Z",
-      "slug": "couple-pizza",
-      "status": "published",
-      "title": "Couple Pizza"
-    },
-    {
-      "__outstatic": {
-        "commit": "caeb954ea1579e04b6b74c80ddf718e56c60a67d",
-        "hash": "1076515129",
-        "path": "/outstatic/content/projects/bearbnb.md"
-      },
-      "author": {
-        "name": "Andre Vitorio"
-      },
-      "collection": "projects",
-      "coverImage": "/images/bearbnb.png",
-      "description": "Amazing rental locations for your teddy bear.",
-      "publishedAt": "2022-03-17T05:35:07.322Z",
-      "slug": "bearbnb",
-      "status": "published",
-      "title": " 🧸 Bearbnb"
-    },
-    {
-      "__outstatic": {
-        "commit": "b22b0f4f3d38a659cbab9b89ac2b7394f2446de4",
-        "hash": "425893791",
-        "path": "/outstatic/content/projects/flycream-travel.md"
-      },
-      "author": {
-        "name": "Andre Vitorio",
-        "picture": "https://avatars.githubusercontent.com/u/1417109?v=4"
-      },
-      "collection": "projects",
-      "coverImage": "/images/flycream-travel.png",
-      "description": "One more day, one more joy. I feel blessed.",
-      "publishedAt": "2022-09-14T17:55:40.452Z",
-      "slug": "flycream-travel",
-      "status": "published",
-      "title": "Flycream Travel"
-    },
-    {
-      "__outstatic": {
-        "commit": "f1d49d79a01c1d85981f368c71944529e6583183",
-        "hash": "182833262",
-        "path": "outstatic/content/projects/oui.md"
-      },
-      "author": {
-        "name": "Salim",
-        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
-      },
-      "collection": "projects",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-10-29T16:12:30.586Z",
-      "slug": "oui",
-      "status": "draft",
-      "title": "oui"
-    },
-    {
-      "__outstatic": {
-        "commit": "69a7c07a631c9265b95ff25de64e7bed79590c60",
+        "commit": "646d0eb7b6dd835d696c4717fcc3435badfcd279",
         "hash": "564988285",
         "path": "outstatic/content/seances-hebdomadaires/mardi-jussieu.md"
       },
@@ -145,7 +137,25 @@
     },
     {
       "__outstatic": {
-        "commit": "7e97669d4c5f76cd4ba24c9dd70c060c7dc3cc3d",
+        "commit": "2feff08378716c40011618e5f95549c9d2b075c4",
+        "hash": "182833262",
+        "path": "outstatic/content/projects/oui.md"
+      },
+      "author": {
+        "name": "Salim",
+        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
+      },
+      "collection": "projects",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-10-29T16:12:30.586Z",
+      "slug": "oui",
+      "status": "draft",
+      "title": "oui"
+    },
+    {
+      "__outstatic": {
+        "commit": "8fe1adeb7e145a2699d887d54e48d2b5cc65e0b1",
         "hash": "1812448006",
         "path": "outstatic/content/seances-hebdomadaires/jeudi-jussieu.md"
       },
@@ -167,80 +177,38 @@
     },
     {
       "__outstatic": {
-        "commit": "54d6cce5ac68e42bc43029706297e9d77071a217",
-        "hash": "1009154148",
-        "path": "outstatic/content/pages/a-propos.md"
+        "commit": "b22b0f4f3d38a659cbab9b89ac2b7394f2446de4",
+        "hash": "425893791",
+        "path": "outstatic/content/projects/flycream-travel.md"
       },
       "author": {
-        "name": "Salim",
-        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
+        "name": "Andre Vitorio",
+        "picture": "https://avatars.githubusercontent.com/u/1417109?v=4"
       },
-      "collection": "pages",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-11-01T15:55:28.203Z",
-      "slug": "a-propos",
-      "status": "draft",
-      "title": "a-propos"
-    },
-    {
-      "__outstatic": {
-        "commit": "13096fbc2a27c4f3e2ec3cedc5debe9aaa9a2edb",
-        "hash": "3531910027",
-        "path": "outstatic/content/posts/nothing-wrong.md"
-      },
-      "author": {
-        "name": "Andre Vitorio"
-      },
-      "collection": "posts",
-      "coverImage": "/images/whatsapp-image-2024-10-28-at-14.11.18-1--ExOD.jpeg",
-      "description": "N'hésitez pas à venir !",
+      "collection": "projects",
+      "coverImage": "/images/flycream-travel.png",
+      "description": "One more day, one more joy. I feel blessed.",
       "publishedAt": "2022-09-14T17:55:40.452Z",
-      "slug": "nothing-wrong",
+      "slug": "flycream-travel",
       "status": "published",
-      "tags": [
-      ],
-      "title": "Nos séances bar échecs commencent"
+      "title": "Flycream Travel"
     },
     {
       "__outstatic": {
-        "commit": "3c61f9b132fa310b64ebc882ef594e8114d553c2",
-        "hash": "3371608301",
-        "path": "outstatic/content/posts/test.md"
+        "commit": "aa1f387e5c66347e675bed0862b070d8946c95f4",
+        "hash": "1055690014",
+        "path": "outstatic/content/projects/couple-pizza.md"
       },
       "author": {
-        "name": "Salim",
-        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
+        "name": "Bob Marley"
       },
-      "collection": "posts",
-      "coverImage": "/images/fc610ffac03bcaad6480bab358b48b63-QxOD.png",
-      "description": "test",
-      "publishedAt": "2024-11-04T00:52:24.149Z",
-      "slug": "test",
+      "collection": "projects",
+      "coverImage": "/images/couple-pizza.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+      "publishedAt": "2022-03-16T05:35:07.322Z",
+      "slug": "couple-pizza",
       "status": "published",
-      "tags": [
-      ],
-      "title": "Test "
-    },
-    {
-      "__outstatic": {
-        "commit": "1ca58539f6e9883a7fc51f7738413145c17a8938",
-        "hash": "756994139",
-        "path": "outstatic/content/posts/test-2.md"
-      },
-      "author": {
-        "name": "Salim",
-        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/img_1816-Y0Nj.jpg",
-      "description": "Test 2",
-      "publishedAt": "2024-11-04T00:58:22.701Z",
-      "slug": "test-2",
-      "status": "published",
-      "tags": [
-      ],
-      "title": "Test 2"
+      "title": "Couple Pizza"
     }
   ]
 }
