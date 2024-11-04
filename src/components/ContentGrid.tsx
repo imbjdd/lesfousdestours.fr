@@ -21,9 +21,11 @@ const ContentGrid = ({
 }: Props) => {
   return (
     <section id={collection}>
-      <h2 className="mb-8 text-5xl md:text-6xl font-bold tracking-tighter leading-tight">
+    <div className="prose lg:prose-xl mb-4">
+      <h2 className="">
         {title}
       </h2>
+    </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-6 lg:gap-x-8 gap-y-5 sm:gap-y-6 lg:gap-y-8 mb-8">
         {items.map((item, id) => (
           <Link key={item.slug} href={`/${collection}/${item.slug}`}>

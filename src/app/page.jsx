@@ -7,7 +7,7 @@ import { DateTime } from 'luxon'
 import Link from 'next/link'
 
 export default async function Index() {
-//  const { content, allPosts, allProjects } = await getData()
+  const { content, allPosts, allProjects } = await getDataBis()
 /*  const events = [{
     title: 'Séance hebdomadaire',
     place: 'Clignancourt',
@@ -99,7 +99,7 @@ export default async function Index() {
         <Header /> 
 
         <section className="mt-8 lg:mt-16 mb-4 lg:pt-24">
-          <div class="flex flex-col lg:flex-row gap-4 lg:gap-0">
+          <div className="flex flex-col lg:flex-row gap-4 lg:gap-0">
             <div className="lg:w-7/12 flex flex-col gap-8">
               <h1 className="text-4xl lg:text-8xl  font-super">Les Fous des Tours</h1>
               <div className="prose lg:prose-xl">
@@ -107,7 +107,7 @@ export default async function Index() {
               </div>
               <a href="#nous-rejoindre"><button className="w-full lg:w-fit px-8 py-3 bg-black text-white rounded-lg hover:bg-zinc-800">Nous rejoindre</button></a>
             </div>
-            <div className="flex-grow"></div>
+            <div className="hidden lg:block flex-grow"></div>
             <div className="hidden lg:block">
               <img className="hover:scale-110 hover:rotate-12 transition ease-in-out" src="/images/lfdt.png"/>
             </div>
@@ -116,7 +116,7 @@ export default async function Index() {
             <div className="prose lg:prose-xl">
               <h2 id="nous-rejoindre">Nos prochaines séances & événements</h2>
             </div>
-            <div className="grow"></div>
+            <div className="hidden lg:block grow"></div>
             <p className="mt-4 hover:underline"><Link href="/evenements">Voir tous nos événements</Link></p>
           </div>
         </section>
@@ -135,71 +135,65 @@ export default async function Index() {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-5 py-24 flex flex-col gap-8 lg:gap-24">
-        <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
-          <div className="lg:w-1/2 prose lg:prose-xl">
-            <h3>Tournoi Inter-universitaire</h3>
-            <p>Chaque année nous organisons un tournoi inter-universitaire qui réunit une petite dizaine d’écoles et universités. Chaque école participante ramène une équipe composé de 4 joueurs.</p>
-          </div>
-          <div className="hidden lg:block lg:flex-grow"></div>
-          <div className="lg:w-5/12">
-            <img className="hover:rotate-3 transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/tournoi.png"/>
-          </div>
-        </div>
-        <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
-          <div className="lg:w-1/2 prose lg:prose-xl">
-            <h3>Séances hebdomadaires</h3>
-            <p>Chaque semaine, nous organisons des séances sur les différents campus. Les séances sont libres. Aucune inscription n'est nécessaire et tout membre de Sorbonne Université peut y assister.</p>
-          </div>
-          <div className="hidden lg:block lg:flex-grow"></div>
-          <div className="lg:w-5/12">
-            <img className="hover:rotate-3 transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/hebdo.jpg"/>
-          </div>
-        </div>
-        <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
-          <div className="lg:w-1/2 prose lg:prose-xl">
-            <h3>Bar échecs</h3>
-            <p>Durant les vacances, nous organisons souvent des bar-échecs. Cela consiste à jouer aux échecs dans un bar. Le cadre y est plus convivial.</p>
-          </div>
-          <div className="hidden lg:block lg:flex-grow"></div>
-          <div className="lg:w-5/12">
-            <img className="hover:rotate-3 transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/bar.jpg"/>
-          </div>
-        </div>
-         <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
-          <div className="lg:w-1/2 prose lg:prose-xl">
-            <h3>Tournois internes</h3>
-            <p>Les tournois internes sont réservés aux membres de Sorbonne Université et sont individuels et non-homologués. Nous en organisons deux chaque année.</p>
-          </div>
-          <div className="hidden lg:block lg:flex-grow"></div>
-          <div className="lg:w-5/12">
-            <img className="hover:rotate-3 transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/tournoi_semestre.jpg"/>
-          </div>
-        </div>
-      </div>
-
-
-{/*        <section className="mt-16 mb-16 md:mb-12">
-          <div
-            className="prose lg:prose-2xl home-intro"
-            dangerouslySetInnerHTML={{ __html: content }}
-          />
-        </section>
+      <div className="max-w-7xl mx-auto px-5 py-8 lg:py-24 flex flex-col gap-8 lg:gap-24">
+        <div className="">
         {allPosts.length > 0 && (
           <ContentGrid
-            title="Posts"
+            title="Actualités"
             items={allPosts}
             collection="posts"
             priority
           />
         )}
-        {allProjects.length > 0 && (
-          <ContentGrid
-            title="Projects"
-            items={allProjects}
-            collection="projects"
-          />
-        )}*/}
+        </div>
+        <div className="flex flex-col gap-4">
+          <div className="prose lg:prose-xl">
+            <h2 id="nous-rejoindre">Nos activités</h2>
+          </div>
+          <div className="max-w-7xl mx-auto flex flex-col gap-8 lg:gap-24">
+            <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
+              <div className="lg:w-1/2 prose lg:prose-xl">
+                <h3>Tournoi Inter-universitaire</h3>
+                <p>Chaque année nous organisons un tournoi inter-universitaire qui réunit une petite dizaine d’écoles et universités. Chaque école participante ramène une équipe composé de 4 joueurs.</p>
+              </div>
+              <div className="hidden lg:block lg:flex-grow"></div>
+              <div className="lg:w-5/12">
+                <img className="hover:rotate-3 border transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/tournoi.png"/>
+              </div>
+            </div>
+            <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
+              <div className="lg:w-1/2 prose lg:prose-xl">
+                <h3>Séances hebdomadaires</h3>
+                <p>Chaque semaine, nous organisons des séances sur les différents campus. Les séances sont libres. Aucune inscription n'est nécessaire et tout membre de Sorbonne Université peut y assister.</p>
+              </div>
+              <div className="hidden lg:block lg:flex-grow"></div>
+              <div className="lg:w-5/12">
+                <img className="hover:rotate-3 border transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/hebdo.jpg"/>
+              </div>
+            </div>
+            <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
+              <div className="lg:w-1/2 prose lg:prose-xl">
+                <h3>Bar échecs</h3>
+                <p>Durant les vacances, nous organisons souvent des bar-échecs. Cela consiste à jouer aux échecs dans un bar. Le cadre y est plus convivial.</p>
+              </div>
+              <div className="hidden lg:block lg:flex-grow"></div>
+              <div className="lg:w-5/12">
+                <img className="hover:rotate-3 border transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/bar.jpg"/>
+              </div>
+            </div>
+             <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
+              <div className="lg:w-1/2 prose lg:prose-xl">
+                <h3>Tournois internes</h3>
+                <p>Les tournois internes sont réservés aux membres de Sorbonne Université et sont individuels et non-homologués. Nous en organisons deux chaque année.</p>
+              </div>
+              <div className="hidden lg:block lg:flex-grow"></div>
+              <div className="lg:w-5/12">
+                <img className="hover:rotate-3 border transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/tournoi_semestre.jpg"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }
@@ -220,8 +214,8 @@ async function getData() {
 }
 
 
-/*
-async function getData() {
+
+async function getDataBis() {
   const db = await load()
 
   const page = await db
@@ -252,5 +246,5 @@ async function getData() {
     allPosts,
     allProjects
   }
-}*/
+}
 

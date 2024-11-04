@@ -31,7 +31,7 @@ const Header = () => {
         <a href="#" onClick={handleClick}><Menu size={24}/></a>
       </div>
       {isOpen && (
-        <div className="fixed h-screen w-screen overscroll-none left-0 top-0 bg-white max-w-7xl mx-auto px-5">
+        <div className="fixed z-50 h-screen w-screen overscroll-none left-0 top-0 bg-white max-w-7xl mx-auto px-5">
           <nav className="layout flex items-center text-black text-lg justify-between pt-8 w-full">
             <Link href="/" className="hover:underline">
               <div className="flex gap-4 justify-center items-center">

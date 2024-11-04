@@ -58,8 +58,8 @@ export default async function Post(params: Params) {
     <Layout>
       <div className="max-w-6xl mx-auto px-5">
         <Header />
-        <article className="mb-32">
-          <div className="relative mb-2 md:mb-4 sm:mx-0 w-full h-52 md:h-96">
+        <article className="mb-10 lg:mb-32">
+          <div className="relative mb-2 md:mb-4 mt-6 sm:mx-0 w-full h-52 md:h-96">
             <Image
               alt={post.title}
               src={post?.coverImage || ''}
@@ -82,8 +82,7 @@ export default async function Post(params: Params) {
             {post.title}
           </h1>
           <div className="hidden md:block md:mb-12 text-slate-600">
-            Written on <DateFormatter dateString={post.publishedAt} /> by{' '}
-            {post?.author?.name || ''}.
+            Rédigé le <DateFormatter dateString={post.publishedAt} />.
           </div>
           <hr className="border-neutral-200 mt-10 mb-10" />
           <div className="max-w-2xl mx-auto">
