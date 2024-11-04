@@ -1,6 +1,6 @@
 {
   "commit": "04dfbd01f66af4cf083062de1b36619799520b39",
-  "generated": "2024-11-04T00:24:15.401Z",
+  "generated": "2024-11-04T00:24:18.988Z",
   "metadata": [
     {
       "__outstatic": {
@@ -22,20 +22,34 @@
     },
     {
       "__outstatic": {
-        "commit": "998b7f74af83e46bbdb4ab5302c8e4c39963278f",
-        "hash": "3707858083",
-        "path": "/outstatic/content/posts/the-wrong-decision.md"
+        "commit": "bf4993b965319da4cb9de4a3810fb4af12bdebd6",
+        "hash": "2596208214",
+        "path": "/outstatic/content/posts/how-to-create-an-outstatic-blog.md"
       },
       "author": {
-        "name": "Naval Ravikant"
+        "name": "Andre Vitorio"
       },
       "collection": "posts",
-      "coverImage": "/images/skyline.png",
+      "coverImage": "/images/jupiter-spaceship.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "publishedAt": "2022-03-26T05:35:07.322Z",
-      "slug": "the-wrong-decision",
+      "publishedAt": "2022-07-14T02:34:02.322Z",
+      "slug": "how-to-create-an-outstatic-blog",
       "status": "published",
-      "title": "If you want to make the wrong decision, ask everyone"
+      "tags": [
+        {
+          "label": "NextJs",
+          "value": "nextJs"
+        },
+        {
+          "label": "GitHub",
+          "value": "gitHub"
+        },
+        {
+          "label": "Outstatic",
+          "value": "outstatic"
+        }
+      ],
+      "title": "Learn how to create your blog with Outstatic"
     },
     {
       "__outstatic": {
