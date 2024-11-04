@@ -1,6 +1,6 @@
 {
-  "commit": "04dfbd01f66af4cf083062de1b36619799520b39",
-  "generated": "2024-11-04T00:24:18.988Z",
+  "commit": "13096fbc2a27c4f3e2ec3cedc5debe9aaa9a2edb",
+  "generated": "2024-11-04T00:26:12.457Z",
   "metadata": [
     {
       "__outstatic": {
@@ -50,23 +50,6 @@
         }
       ],
       "title": "Learn how to create your blog with Outstatic"
-    },
-    {
-      "__outstatic": {
-        "commit": "d2f316fd04def3347c906f5227da5daf79971f61",
-        "hash": "4086614036",
-        "path": "/outstatic/content/posts/nothing-wrong.md"
-      },
-      "author": {
-        "name": "Andre Vitorio"
-      },
-      "collection": "posts",
-      "coverImage": "/images/industrial-pattern.png",
-      "description": "One more day, one more joy. I feel blessed.",
-      "publishedAt": "2022-09-14T17:55:40.452Z",
-      "slug": "nothing-wrong",
-      "status": "published",
-      "title": "Nothing is wrong. Everything is perfect"
     },
     {
       "__outstatic": {
@@ -199,6 +182,25 @@
       "slug": "a-propos",
       "status": "draft",
       "title": "a-propos"
+    },
+    {
+      "__outstatic": {
+        "commit": "13096fbc2a27c4f3e2ec3cedc5debe9aaa9a2edb",
+        "hash": "3531910027",
+        "path": "outstatic/content/posts/nothing-wrong.md"
+      },
+      "author": {
+        "name": "Andre Vitorio"
+      },
+      "collection": "posts",
+      "coverImage": "/images/whatsapp-image-2024-10-28-at-14.11.18-1--ExOD.jpeg",
+      "description": "N'hésitez pas à venir !",
+      "publishedAt": "2022-09-14T17:55:40.452Z",
+      "slug": "nothing-wrong",
+      "status": "published",
+      "tags": [
+      ],
+      "title": "Nos séances bar échecs commencent"
     }
   ]
 }
