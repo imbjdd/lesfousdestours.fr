@@ -1,6 +1,6 @@
 {
-  "commit": "13096fbc2a27c4f3e2ec3cedc5debe9aaa9a2edb",
-  "generated": "2024-11-04T00:26:12.457Z",
+  "commit": "6c100fe0e452de813291cf874132c5335da79814",
+  "generated": "2024-11-04T00:47:06.550Z",
   "metadata": [
     {
       "__outstatic": {
@@ -201,6 +201,26 @@
       "tags": [
       ],
       "title": "Nos séances bar échecs commencent"
+    },
+    {
+      "__outstatic": {
+        "commit": "6c100fe0e452de813291cf874132c5335da79814",
+        "hash": "2789418496",
+        "path": "outstatic/content/posts/test.md"
+      },
+      "author": {
+        "name": "Salim",
+        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/fc610ffac03bcaad6480bab358b48b63-QxOD.png",
+      "description": "test",
+      "publishedAt": "2024-11-04T00:52:24.149Z",
+      "slug": "test",
+      "status": "draft",
+      "tags": [
+      ],
+      "title": "Test "
     }
   ]
 }
