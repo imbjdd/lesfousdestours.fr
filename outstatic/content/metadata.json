@@ -1,6 +1,6 @@
 {
-  "commit": "08daf66546afab441ba8b7817d29eac025b19796",
-  "generated": "Mon, 04 Nov 2024 00:54:18 GMT",
+  "commit": "55f3f5e368d371047203bbe36b331b0c13525f98",
+  "generated": "2024-11-04T00:56:04.347Z",
   "metadata": [
     {
       "__outstatic": {
@@ -56,26 +56,6 @@
       "slug": "bearbnb",
       "status": "published",
       "title": " 🧸 Bearbnb"
-    },
-    {
-      "__outstatic": {
-        "commit": "c5f20b987b1da4c8e3881d8e10253f14839d766f",
-        "hash": "3371608301",
-        "path": "outstatic/content/posts/test.md"
-      },
-      "author": {
-        "name": "Salim",
-        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/fc610ffac03bcaad6480bab358b48b63-QxOD.png",
-      "description": "test",
-      "publishedAt": "2024-11-04T00:52:24.149Z",
-      "slug": "test",
-      "status": "published",
-      "tags": [
-      ],
-      "title": "Test "
     },
     {
       "__outstatic": {
