@@ -125,7 +125,7 @@ export default async function Index() {
       <section className="px-5">
         <div className="flex flex-col lg:flex-row gap-4 [&>*:nth-child(n+5)]:hidden">
         {events.map(event => (
-          <div className=" flex w-full text-xl flex-col bg-[#E9D056] hover:bg-[#ebd567] flex-grow lg:w-fit p-4 rounded-lg">
+          <div className=" flex w-full border border-black border-2 text-xl flex-col bg-[#E9D056] hover:bg-[#ebd567] flex-grow lg:w-fit p-4 rounded-lg">
             <p className="font-bold">{event.title}</p>
             <p>{event.place}, {event.lieu}</p>
             <p>{event.jour} {DateTime.fromISO(event.iso).setLocale('fr').toLocaleString({month: 'long', day: 'numeric'})}</p>
@@ -158,7 +158,7 @@ export default async function Index() {
               </div>
               <div className="hidden lg:block lg:flex-grow"></div>
               <div className="lg:w-5/12">
-                <img className="hover:rotate-3 border transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/tournoi.png"/>
+                <img className="hover:rotate-3 border border-black border-2 transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/tournoi.png"/>
               </div>
             </div>
             <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
@@ -168,7 +168,7 @@ export default async function Index() {
               </div>
               <div className="hidden lg:block lg:flex-grow"></div>
               <div className="lg:w-5/12">
-                <img className="hover:rotate-3 border transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/hebdo.jpg"/>
+                <img className="hover:rotate-3 border border-black border-2 transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/hebdo.jpg"/>
               </div>
             </div>
             <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
@@ -178,7 +178,7 @@ export default async function Index() {
               </div>
               <div className="hidden lg:block lg:flex-grow"></div>
               <div className="lg:w-5/12">
-                <img className="hover:rotate-3 border transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/bar.jpg"/>
+                <img className="hover:rotate-3 border border-black border-2 transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/bar.jpg"/>
               </div>
             </div>
              <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row lg:odd:flex-row-reverse">
@@ -188,7 +188,7 @@ export default async function Index() {
               </div>
               <div className="hidden lg:block lg:flex-grow"></div>
               <div className="lg:w-5/12">
-                <img className="hover:rotate-3 border transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/tournoi_semestre.jpg"/>
+                <img className="hover:rotate-3 border border-black border-2 transition ease-in-out duration-300 origin-bottom-left rounded-lg aspect-video w-full object-cover" src="/images/tournoi_semestre.jpg"/>
               </div>
             </div>
           </div>

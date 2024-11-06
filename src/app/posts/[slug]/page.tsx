@@ -84,7 +84,7 @@ export default async function Post(params: Params) {
           <div className="hidden md:block md:mb-12 text-slate-600">
             Rédigé le <DateFormatter dateString={post.publishedAt} />.
           </div>
-          <hr className="border-neutral-200 mt-10 mb-10" />
+          <hr className="border-black mt-10 mb-10" />
           <div className="max-w-2xl mx-auto">
             <div
               className="prose lg:prose-xl"
