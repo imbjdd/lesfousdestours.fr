@@ -71,7 +71,7 @@ export default async function Index() {
             </div>
             <div className="flex flex-col pt-2 gap-4"> 
             {seances_data.map(seance => (
-              <div className="text-xl p-4 bg-[#E9D056] rounded-lg border border-black border-2 w-fit hover:bg-[#EBD567]">
+              <div className="text-xl p-4 bg-[#E9D056] rounded-lg border-black border-2 w-fit hover:bg-[#EBD567]">
                 <p className="text-xl font-bold">{seance.place}</p>
                 <p>Le <span className="font-bold">{seance.jour}</span> de <span className="font-bold">{seance.horaire}</span></p>
                 <p>Lieu : <span className="font-bold">{seance.lieu}</span></p>
