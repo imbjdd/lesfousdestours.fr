@@ -1,6 +1,6 @@
 {
-  "commit": "6970666b2766b02a05064009b015f373bbfff8ca",
-  "generated": "Mon, 04 Nov 2024 00:59:23 GMT",
+  "commit": "36426086e00839f657bea405ec25c4c63c4bd750",
+  "generated": "2024-11-11T13:50:18.609Z",
   "metadata": [
     {
       "__outstatic": {
@@ -89,28 +89,6 @@
       "slug": "couple-pizza",
       "status": "published",
       "title": "Couple Pizza"
-    },
-    {
-      "__outstatic": {
-        "commit": "646d0eb7b6dd835d696c4717fcc3435badfcd279",
-        "hash": "564988285",
-        "path": "outstatic/content/seances-hebdomadaires/mardi-jussieu.md"
-      },
-      "author": {
-        "name": "Salim",
-        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
-      },
-      "collection": "seances-hebdomadaires",
-      "coverImage": "",
-      "description": "",
-      "endDate": "03/05/2025",
-      "horaire": "16h00 à 18h00",
-      "lieu": "salle 141",
-      "publishedAt": "2024-10-31T23:19:22.984Z",
-      "slug": "mardi-jussieu",
-      "startDate": "04/12/2024",
-      "status": "published",
-      "title": "Mardi Jussieu"
     },
     {
       "__outstatic": {
