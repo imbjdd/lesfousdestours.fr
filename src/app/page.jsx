@@ -84,7 +84,8 @@ export default async function Index() {
           lieu: seance.lieu,
           jour: seance.jour,
           date: '17h00 à 19h00',
-          iso: date.toISO()
+          iso: date.toISO(),
+          horaire: seance.horaire
         })
       }
     }
@@ -129,7 +130,7 @@ export default async function Index() {
             <p className="font-bold">{event.title}</p>
             <p>{event.place}, {event.lieu}</p>
             <p>{event.jour} {DateTime.fromISO(event.iso).setLocale('fr').toLocaleString({month: 'long', day: 'numeric'})}</p>
-            <p>{event.date}</p>
+            <p>{event.horaire}</p>
           </div>
         ))}
         </div>
