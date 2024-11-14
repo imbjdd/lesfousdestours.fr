@@ -13,12 +13,12 @@ const Footer = () => {
         </h3>
         <p className="opacity-90">Association loi 1901</p>
         <div className="flex pt-2 gap-2">
-          <a href="/" target="_blank">
+          <a href="https://chat.whatsapp.com/Jvv7BGlBlKjHbz6LM5x2ZA" target="_blank">
             <div className="p-3 bg-zinc-900 rounded-full border border-zinc-800 hover:border-zinc-600 hover:rotate-180 transition ease-in-out duration-300">
               <Image className="opacity-90" width={24} src={WhatsApp} alt="WhatsApp logo" />
             </div>
           </a>
-          <a href="/" target="_blank">
+          <a href="https://discord.gg/3HyjfNY2Bw" target="_blank">
             <div className="p-3 bg-zinc-900 rounded-full border border-zinc-800 hover:border-zinc-600 hover:rotate-180 transition ease-in-out duration-300">
               <Image className="opacity-90" width={24} src={Discord} alt="Discord logo" />
             </div>
