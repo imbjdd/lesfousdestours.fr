@@ -1,6 +1,6 @@
 {
-  "commit": "36426086e00839f657bea405ec25c4c63c4bd750",
-  "generated": "2024-11-11T13:50:18.609Z",
+  "commit": "b34b5d3d25aa96c280fcd0d004f4cd5f63958d4c",
+  "generated": "2024-11-14T14:47:57.186Z",
   "metadata": [
     {
       "__outstatic": {
@@ -54,24 +54,6 @@
       "slug": "home",
       "status": "published",
       "title": "Home"
-    },
-    {
-      "__outstatic": {
-        "commit": "e086ec057776f1deb4563f9d6f47c7fbf3916ea3",
-        "hash": "1009154148",
-        "path": "outstatic/content/pages/a-propos.md"
-      },
-      "author": {
-        "name": "Salim",
-        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
-      },
-      "collection": "pages",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-11-01T15:55:28.203Z",
-      "slug": "a-propos",
-      "status": "draft",
-      "title": "a-propos"
     },
     {
       "__outstatic": {
@@ -147,6 +129,24 @@
       "slug": "flycream-travel",
       "status": "published",
       "title": "Flycream Travel"
+    },
+    {
+      "__outstatic": {
+        "commit": "b34b5d3d25aa96c280fcd0d004f4cd5f63958d4c",
+        "hash": "32437355",
+        "path": "outstatic/content/pages/a-propos.md"
+      },
+      "author": {
+        "name": "Salim",
+        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
+      },
+      "collection": "pages",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-11-01T15:55:28.203Z",
+      "slug": "a-propos",
+      "status": "draft",
+      "title": "a-propos"
     }
   ]
 }

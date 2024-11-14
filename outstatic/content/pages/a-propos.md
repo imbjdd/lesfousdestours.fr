@@ -16,9 +16,11 @@ publishedAt: '2024-11-01T15:55:28.203Z'
 
 L'accès à nos séances est gratuit et ouvert à tous les étudiants et au personnel de SU.
 
+Vous pouvez nous contacter par e-mail à l'adresse [contact@lesfousdestours.fr](mailto:contact@lesfousdestours.fr), et sur nos différents réseaux sociaux.
+
 ## 🎯 Notre Mission
 
-Nous souhaitons transmettre la passion des jeux de stratégie, créer une communauté accueillante et encourager le partage d'expérience et d'idées autour des jeux de réflexion.
+Nous souhaitons transmettre la passion des échecs, créer une communauté accueillante et encourager le partage d'expérience et d'idées.
 
 ## 🏆 Notre Bureau
 
@@ -29,3 +31,5 @@ Notre bureau est composé de :
 - Un **secrétaire général**,
 - Des **responsables campus**,
 - Des **secrétaires** dont le but est de réaliser diverses tâches, selon le pôle (design, communication) auxquels ils appartiennent.
+
+Nous sommes constamment à la recherche d'aide. Si vous souhaitez rejoindre le bureau ou nous aider, n'hésitez pas à nous contacter.
