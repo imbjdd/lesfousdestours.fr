@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.46.1",
     "date-fns": "^2.30.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.454.0",
