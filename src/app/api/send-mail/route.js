@@ -25,7 +25,7 @@ export async function POST(request) {
     const { success } = await verify(secretKey, token);
 
     if (!success) {
-      return { message: 'Invalid captcha', success: false };
+      return new Response(JSON.stringify({ message: 'Invalid captcha', success: false }), { status: 500 });;
     }
 
     const { data, error } = await supabase
