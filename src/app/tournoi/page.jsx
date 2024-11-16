@@ -10,18 +10,51 @@ import Header from '@/components/Header'
 import { DateTime } from 'luxon'
 import Image from 'next/image'
 import profilePic from '@/../public/images/inscription.webp'
+import HCaptcha from '@hcaptcha/react-hcaptcha';
 
 export default function Index() {
+  const ref = useRef(null);
+  const captchaRef = useRef(null);
+  const [captchaToken, setCaptchaToken] = React.useState(null);
+
+  const onCaptchaChange = (token) => setCaptchaToken(token);
+  const onCaptchaExpire = () => setCaptchaToken(null);
+
   const [tournament, setTournament] = React.useState([]);
   const nameRef = useRef();
   const mailRef = useRef();
   const phoneRef = useRef();
   const [inscriptionEtat, setInscriptionEtat] = React.useState(false)
+  const [idUnique, setIdUnique] = React.useState('')
+
+  const sendEmail = async (name, email, phone_number) => {
+    const response = await fetch('/api/send-mail', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        tournament_id: tournament.id,
+        phone_number: phone_number,
+        token: captchaToken
+      }),
+    });
+
+    console.log('envoi')
+
+    const result = await response.json();
+    console.log(result);
+
+    setInscriptionEtat(true)
+    setIdUnique(result[0].id)
+  };
 
   async function handleClick() {
     console.log('increment like count');
     console.log(nameRef.current.value)
 
+    sendEmail(nameRef.current.value, mailRef.current.value, phoneRef.current.value)
+/*
     const { data, error } = await supabase
       .from('registrations')
       .insert([
@@ -31,7 +64,8 @@ export default function Index() {
           tournament_id: tournament.id,
           phone_number: phoneRef.current.value,
         },
-      ]);
+      ])
+      .select();
 
     if (error) {
       console.error('Error:', error);
@@ -39,7 +73,9 @@ export default function Index() {
     } else {
       console.log('Inscription réussie:', data);
       setInscriptionEtat(true)
-    }
+      setIdUnique(data[0].id)
+      sendEmail()
+    }*/
   }
 
   React.useEffect(() => {
@@ -66,7 +102,7 @@ export default function Index() {
         <Header /> 
 
         <section className="mt-8 lg:mt-16 mb-4 lg:pt-6 pb-6 lg:pb-24">
-          <div class="flex flex-col">
+          <div className="flex flex-col">
             <div className="prose lg:prose-xl">
               <h1>{tournament.name}</h1>
               <p>{tournament.description}</p>
@@ -93,12 +129,19 @@ export default function Index() {
                     <input ref={phoneRef} type="text" placeholder="Capablanca" id="name" className="z-20 pt-6 pb-2 text-white w-fit px-4 w-full bg-transparent rounded-lg border-none" name="name" required minlength="4" size="10" />
                   </div>
                 </div>
+                <HCaptcha
+                  sitekey="3a3890fa-6b84-4860-af56-d6a49a64ff96"
+                  onVerify={onCaptchaChange}
+                  ref={captchaRef}
+                  onExpire={onCaptchaExpire}
+                />
                 <button onClick={handleClick} className="w-fit px-4 py-4 bg-[#E9D056] rounded-lg font-bold hover:bg-[#ebd567] text-black">Envoyer</button>
               </div>
             )}
             {inscriptionEtat && (
               <div className="flex flex-col gap-4">
                 <p>N'oubliez pas de venir, et de nous contacter si vous ne pouvez pas venir. :)</p>
+                <p>Voilà votre id unique : <span className="font-bold">{idUnique}</span>. Il vous est également envoyé par mail.</p>
                 <Image
                   src={profilePic}
                   className="rounded-lg border border-2 border-black"

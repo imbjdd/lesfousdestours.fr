@@ -8,11 +8,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hcaptcha/react-hcaptcha": "^1.11.0",
     "@supabase/supabase-js": "^2.46.1",
     "date-fns": "^2.30.0",
     "gray-matter": "^4.0.3",
+    "hcaptcha": "^0.2.0",
     "lucide-react": "^0.454.0",
     "luxon": "^3.5.0",
+    "mailgun-js": "^0.22.0",
+    "mailgun.js": "^10.2.3",
     "next": "^13.5.4",
     "outstatic": "latest",
     "react": "^18",
