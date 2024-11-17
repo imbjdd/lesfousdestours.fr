@@ -25,7 +25,7 @@ export async function POST(request) {
     const { success } = await verify(secretKey, token);
 
     if (!success) {
-      return new Response(JSON.stringify({ message: 'Invalid captcha', success: false }), { status: 500 });;
+      return new Response(JSON.stringify({ message: 'Le captcha que vous avez renvoyé est invalide', success: false }), { status: 500 });;
     }
 
     const { data, error } = await supabase
@@ -41,7 +41,7 @@ export async function POST(request) {
       .select();
 
     if (error) {
-      return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+      return new Response(JSON.stringify({ message: 'Nous avons eu une erreur en enregistrant vos données.' }), { status: 500 });
     }
 
     // Envoie l'email
@@ -49,7 +49,7 @@ export async function POST(request) {
       url,
       new URLSearchParams({
         from: 'Les Fous des Tours <postmaster@mg.lesfousdestours.fr>',
-        to: 'Salim Boujaddi <boujaddi.salim@protonmail.com>',
+        to: 'name <'+email+'>',
         subject: 'Inscription au tournoi confirmée',
         template: 'yes',
         'h:X-Mailgun-Variables': JSON.stringify({ id: data[0].id}),
@@ -66,8 +66,8 @@ export async function POST(request) {
     return new Response(JSON.stringify(data), { status: 200 });
   } catch (error) {
     console.error('Error sending email:', error.response?.data || error.message);
-    return NextResponse.json(
-      { error: 'Failed to send email', details: error.response?.data || error.message },
+    return new Response(JSON.stringify(
+      { message: 'L\'e-mail n\'a pas pu être envoyé.', details: error.response?.data || error.message }),
       { status: 500 }
     );
   }

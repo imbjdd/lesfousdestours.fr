@@ -25,6 +25,7 @@ export default function Index() {
   const mailRef = useRef();
   const phoneRef = useRef();
   const [inscriptionEtat, setInscriptionEtat] = React.useState(false)
+  const [message, setMessage] = React.useState('')
   const [idUnique, setIdUnique] = React.useState('')
 
   const sendEmail = async (name, email, phone_number) => {
@@ -38,54 +39,30 @@ export default function Index() {
         phone_number: phone_number,
         token: captchaToken
       }),
-    });
-
-    console.log('envoi')
+    })
 
     const result = await response.json();
     console.log(result);
 
-    setInscriptionEtat(true)
-    setIdUnique(result[0].id)
+    // s'il y a une erreur
+    if(!result.message) {
+      setInscriptionEtat(true)
+      setIdUnique(result[0].id)
+    }
+    else {
+      setMessage(result.message)
+    }
   };
 
   async function handleClick() {
-    console.log('increment like count');
-    console.log(nameRef.current.value)
-
     sendEmail(nameRef.current.value, mailRef.current.value, phoneRef.current.value)
-/*
-    const { data, error } = await supabase
-      .from('registrations')
-      .insert([
-        {
-          name: nameRef.current.value,
-          email: mailRef.current.value,
-          tournament_id: tournament.id,
-          phone_number: phoneRef.current.value,
-        },
-      ])
-      .select();
-
-    if (error) {
-      console.error('Error:', error);
-      console.log(data)
-    } else {
-      console.log('Inscription réussie:', data);
-      setInscriptionEtat(true)
-      setIdUnique(data[0].id)
-      sendEmail()
-    }*/
   }
 
   React.useEffect(() => {
     async function fetchTournaments() {
       const { data, error } = await supabase
         .from('tournaments')
-        .select('*');
-
-        console.log(data)
-
+        .select('*')
       if (error) {
         console.error(error);
       } else {
@@ -115,6 +92,9 @@ export default function Index() {
             </div>
             {!inscriptionEtat && (
               <div className="flex flex-col gap-2 mt-4">
+                {message && (
+                  <p className="text-red-500">{message}</p>
+                )}
                 <div className="flex text-zinc-400 flex-col relative border border-black bg-black rounded-lg">
                   <label className="px-4 text-sm py-2 absolute" for="cheese">Nom</label>
                   <input ref={nameRef} type="text" placeholder="Capablanca" id="name" className="z-20 pt-6 pb-2 text-white w-fit px-4 w-full bg-transparent rounded-lg border-none" name="name" required minlength="4" size="10" />
