@@ -1,0 +1,13 @@
+{
+  "title": "bar-echecs",
+  "type": "object",
+  "properties": {
+    "lieu": {
+      "required": false,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "lieu"
+    }
+  }
+}
