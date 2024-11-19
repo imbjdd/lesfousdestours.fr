@@ -7,6 +7,7 @@ import { DateTime } from 'luxon'
 
 export default async function Index() {
   const seances_data = await getData()
+  const bar_echecs = await getData2()
 
   const day_to_number = {
     'lundi': 1,
@@ -51,7 +52,7 @@ export default async function Index() {
 
   const events = nextSeances()
 
-  const evenements = []
+  const evenements = bar_echecs
 
   return (
     <Layout>
@@ -89,21 +90,17 @@ export default async function Index() {
               </div>
             )}
           </div>
+            <div className="flex flex-col pt-2 gap-4"> 
+            {evenements.map(seance => (
+              <div className="text-xl p-4 rounded-lg border-black border-2 w-fit bg-blue-400 hover:bg-blue-400/90">
+                <p className="text-xl font-bold">{seance.place}</p>
+                <p>Le <span className="font-bold">{seance.jour}</span> de <span className="font-bold">{seance.horaire}</span></p>
+                <p>Lieu : <span className="font-bold">{seance.lieu}</span></p>
+              </div>
+            ))}
+            </div>
         </section>
       </div>
-
-      <section className="px-5">
-        <div className="flex gap-4 [&>*:nth-child(n+5)]:hidden">
-        {evenements.map(event => (
-          <div className=" flex flex-col bg-[#E9D056] flex-grow w-fit p-4 rounded-lg">
-            <p className="font-bold">{event.title}</p>
-            <p>{event.place}</p>
-            <p>{event.jour} {DateTime.fromISO(event.iso).setLocale('fr').toLocaleString({month: 'long', day: 'numeric'})}</p>
-            <p>{event.date}</p>
-          </div>
-        ))}
-        </div>
-      </section>
     </Layout>
   )
 }
@@ -113,6 +110,22 @@ async function getData() {
 
   const posts = getDocuments('seances-hebdomadaires', ['title', 'content', 'lieu', 'startDate', 'endDate', 'horaire'])
   console.log('#'.repeat(400))
+  console.log(posts)
+  const processing = posts.map(x => {
+    x.jour = x.title.split(' ')[0].toLowerCase()
+    x.place = x.title.split(' ').slice(1).join(' ')
+    return x
+  })
+  console.log(processing)
+  return processing
+}
+
+async function getData2() {
+  const db = await load()
+
+  const posts = getDocuments('bar-echecs', ['title', 'content', 'lieu', 'startDate', 'endDate', 'horaire'])
+  console.log('ouais')
+  console.log('-'.repeat(400))
   console.log(posts)
   const processing = posts.map(x => {
     x.jour = x.title.split(' ')[0].toLowerCase()

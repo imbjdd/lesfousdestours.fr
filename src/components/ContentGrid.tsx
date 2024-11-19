@@ -34,7 +34,7 @@ const ContentGrid = ({
                 <Image
                   src={item.coverImage ?? ''}
                   alt={`Cover Image for ${item.title}`}
-                  className="object-cover object-center w-full h-auto"
+                  className="object-cover object-center w-full h-auto border-b-2 border-black"
                   width={0}
                   height={0}
                   sizes="(min-width: 768px) 347px, 192px"

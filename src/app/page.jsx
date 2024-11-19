@@ -35,6 +35,7 @@ export default async function Index() {
   }]
 */
   const seances_data = await getData()
+  const bar_echecs = await getData2()
 
   const day_to_number = {
     'lundi': 1,
@@ -89,6 +90,33 @@ export default async function Index() {
         })
       }
     }
+    for(const seance of bar_echecs) {
+      console.log(seance)
+      // pour savoir si on part de DateTime.now() ou bien plutôt de startDate, on part du maximum entre les deux
+      let date_used;
+      if(DateTime.now().toISO() > DateTime.fromFormat(seance.startDate, "dd/LL/yyyy").toISO()) {
+        date_used = DateTime.now()
+      }
+      else {
+        date_used = DateTime.fromFormat(seance.startDate, "dd/LL/yyyy")
+      }
+
+      const today = date_used.weekday
+      const jour = seance.jour
+      const days_until = (day_to_number[jour] - today + 7) % 7;
+
+
+      const date = date_used.plus({days: days_until})
+      dates.push({
+        title: 'Bar échecs',
+        place: seance.place,
+        lieu: seance.lieu,
+        jour: seance.jour,
+        date: '17h00 à 19h00',
+        iso: date.toISO(),
+        horaire: seance.horaire
+      })
+    }
     return dates.sort((a,b) => a.iso < b.iso ? -1 : 1)
   }
 
@@ -126,7 +154,7 @@ export default async function Index() {
       <section className="px-5">
         <div className="flex flex-col lg:flex-row gap-4 [&>*:nth-child(n+5)]:hidden">
         {events.map(event => (
-          <div className=" flex w-full border-black border-2 text-xl flex-col bg-[#E9D056] hover:bg-[#ebd567] flex-grow lg:w-fit p-4 rounded-lg">
+          <div className={"flex w-full border-black border-2 text-xl flex-col flex-grow lg:w-fit p-4 rounded-lg " + (event.title === 'Bar échecs' ? 'bg-blue-400 hover:bg-blue-400/90':'bg-[#E9D056] hover:bg-[#ebd567]')}>
             <p className="font-bold">{event.title}</p>
             <p>{event.place}, {event.lieu}</p>
             <p>{event.jour} {DateTime.fromISO(event.iso).setLocale('fr').toLocaleString({month: 'long', day: 'numeric'})}</p>
@@ -204,6 +232,22 @@ async function getData() {
 
   const posts = getDocuments('seances-hebdomadaires', ['title', 'content', 'lieu', 'startDate', 'endDate', 'horaire'])
   console.log('#'.repeat(400))
+  console.log(posts)
+  const processing = posts.map(x => {
+    x.jour = x.title.split(' ')[0].toLowerCase()
+    x.place = x.title.split(' ').slice(1).join(' ')
+    return x
+  })
+  console.log(processing)
+  return processing
+}
+
+async function getData2() {
+  const db = await load()
+
+  const posts = getDocuments('bar-echecs', ['title', 'content', 'lieu', 'startDate', 'endDate', 'horaire'])
+  console.log('ouais')
+  console.log('-'.repeat(400))
   console.log(posts)
   const processing = posts.map(x => {
     x.jour = x.title.split(' ')[0].toLowerCase()
