@@ -1,6 +1,6 @@
 {
   "commit": "ba002af1c512416095ded6442bc1338a4f4b17c9",
-  "generated": "2024-11-19T19:58:52.940Z",
+  "generated": "2024-11-19T19:59:44.748Z",
   "metadata": [
     {
       "__outstatic": {
@@ -151,7 +151,7 @@
     {
       "__outstatic": {
         "commit": "ba002af1c512416095ded6442bc1338a4f4b17c9",
-        "hash": "2476155824",
+        "hash": "1234697296",
         "path": "outstatic/content/bar-echecs/ok.md"
       },
       "author": {
@@ -163,7 +163,7 @@
       "description": "",
       "endDate": "26/11/2024",
       "horaire": "16h00 à 20h00",
-      "lieu": "",
+      "lieu": "Sous-sol",
       "publishedAt": "2024-11-19T19:53:51.307Z",
       "slug": "ok",
       "startDate": "26/11/2024",

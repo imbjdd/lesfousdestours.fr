@@ -7,7 +7,7 @@ author:
 slug: 'ok'
 description: ''
 coverImage: ''
-lieu: ''
+lieu: 'Sous-sol'
 startDate: '26/11/2024'
 endDate: '26/11/2024'
 horaire: '16h00 à 20h00'
