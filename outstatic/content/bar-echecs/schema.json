@@ -22,6 +22,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "endDate"
+    },
+    "horaire": {
+      "required": false,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "horaire"
     }
   }
 }
