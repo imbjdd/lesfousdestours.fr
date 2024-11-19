@@ -7,6 +7,10 @@ author:
 slug: 'ok'
 description: ''
 coverImage: ''
+lieu: ''
+startDate: '26/11/2024'
+endDate: '26/11/2024'
+horaire: '16h00 à 20h00'
 publishedAt: '2024-11-19T19:53:51.307Z'
 ---
 
