@@ -101,21 +101,23 @@ export default async function Index() {
         date_used = DateTime.fromFormat(seance.startDate, "dd/LL/yyyy")
       }
 
-      const today = date_used.weekday
-      const jour = seance.jour
-      const days_until = (day_to_number[jour] - today + 7) % 7;
+      if(DateTime.now().toISO() < DateTime.fromFormat(seance.startDate, "dd/LL/yyyy").toISO()) {
+        const today = date_used.weekday
+        const jour = seance.jour
+        const days_until = (day_to_number[jour] - today + 7) % 7;
 
 
-      const date = date_used.plus({days: days_until})
-      dates.push({
-        title: 'Bar échecs',
-        place: seance.place,
-        lieu: seance.lieu,
-        jour: seance.jour,
-        date: '17h00 à 19h00',
-        iso: date.toISO(),
-        horaire: seance.horaire
-      })
+        const date = date_used.plus({days: days_until})
+        dates.push({
+          title: 'Bar échecs',
+          place: seance.place,
+          lieu: seance.lieu,
+          jour: seance.jour,
+          date: '17h00 à 19h00',
+          iso: date.toISO(),
+          horaire: seance.horaire
+        })
+      }
     }
     return dates.sort((a,b) => a.iso < b.iso ? -1 : 1)
   }
@@ -293,3 +295,4 @@ async function getDataBis() {
   }
 }
 
+export const dynamic = "force-dynamic";

@@ -102,11 +102,11 @@ export default function Index() {
                 <div className="flex flex-col lg:flex-row w-full gap-2">
                   <div className="flex-1 flex text-zinc-400 flex-col relative border border-black bg-black rounded-lg">
                     <label className="px-4 text-sm py-2 absolute" for="cheese">E-mail</label>
-                    <input ref={mailRef} type="text" placeholder="Capablanca" id="name" className="z-20 pt-6 pb-2 text-white w-fit px-4 w-full bg-transparent rounded-lg border-none" name="name" required minlength="4"  size="10" />
+                    <input ref={mailRef} type="text" placeholder="capablanca@lesfousdestours.fr" id="name" className="z-20 pt-6 pb-2 text-white w-fit px-4 w-full bg-transparent rounded-lg border-none" name="name" required minlength="4"  size="10" />
                   </div>
                   <div className="flex-1 flex text-zinc-400 flex-col relative border border-black bg-black rounded-lg">
                     <label className="px-4 text-sm py-2 absolute" for="cheese">Numéro de téléphone</label>
-                    <input ref={phoneRef} type="text" placeholder="Capablanca" id="name" className="z-20 pt-6 pb-2 text-white w-fit px-4 w-full bg-transparent rounded-lg border-none" name="name" required minlength="4" size="10" />
+                    <input ref={phoneRef} type="text" placeholder="0606060606" id="name" className="z-20 pt-6 pb-2 text-white w-fit px-4 w-full bg-transparent rounded-lg border-none" name="name" required minlength="4" size="10" />
                   </div>
                 </div>
                 <HCaptcha
