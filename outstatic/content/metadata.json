@@ -1,6 +1,6 @@
 {
-  "commit": "ba002af1c512416095ded6442bc1338a4f4b17c9",
-  "generated": "2024-11-19T19:59:44.748Z",
+  "commit": "3a6c537cecd30d100931c59f92b170c7e4a1b9e1",
+  "generated": "2024-11-27T08:49:26.474Z",
   "metadata": [
     {
       "__outstatic": {
@@ -147,28 +147,6 @@
       "slug": "a-propos",
       "status": "draft",
       "title": "a-propos"
-    },
-    {
-      "__outstatic": {
-        "commit": "ba002af1c512416095ded6442bc1338a4f4b17c9",
-        "hash": "1234697296",
-        "path": "outstatic/content/bar-echecs/ok.md"
-      },
-      "author": {
-        "name": "Salim",
-        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
-      },
-      "collection": "bar-echecs",
-      "coverImage": "",
-      "description": "",
-      "endDate": "26/11/2024",
-      "horaire": "16h00 à 20h00",
-      "lieu": "Sous-sol",
-      "publishedAt": "2024-11-19T19:53:51.307Z",
-      "slug": "ok",
-      "startDate": "26/11/2024",
-      "status": "published",
-      "title": "Mardi Baker Street Pub"
     }
   ]
 }
