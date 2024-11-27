@@ -294,5 +294,3 @@ async function getDataBis() {
     allProjects
   }
 }
-
-export const dynamic = "force-dynamic";
