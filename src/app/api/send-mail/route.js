@@ -49,7 +49,7 @@ export async function POST(request) {
       url,
       new URLSearchParams({
         from: 'Les Fous des Tours <postmaster@mg.lesfousdestours.fr>',
-        to: 'name <'+email+'>',
+        to: name+' <'+email+'>',
         subject: 'Inscription au tournoi confirmée',
         template: 'yes',
         'h:X-Mailgun-Variables': JSON.stringify({ id: data[0].id}),

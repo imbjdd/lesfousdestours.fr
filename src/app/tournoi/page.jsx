@@ -11,6 +11,7 @@ import { DateTime } from 'luxon'
 import Image from 'next/image'
 import profilePic from '@/../public/images/inscription.webp'
 import HCaptcha from '@hcaptcha/react-hcaptcha';
+import Link from 'next/link'
 
 export default function Index() {
   const ref = useRef(null);
@@ -121,10 +122,10 @@ export default function Index() {
             {inscriptionEtat && (
               <div className="flex flex-col gap-4">
                 <p>N'oubliez pas de venir, et de nous contacter si vous ne pouvez pas venir. :)</p>
-                <p>Voilà votre id unique : <span className="font-bold">{idUnique}</span>. Il vous est également envoyé par mail.</p>
+                <p>Vous pouvez vérifier sur cette <Link href={'/inscription/'+idUnique}className="font-bold">page</Link> que vous êtes bien inscrits. Elle vous est également envoyée par e-mail.</p>
                 <Image
                   src={profilePic}
-                  className="rounded-lg border border-2 border-black"
+                  className="rounded-lg w-full border border-2 border-black"
                   alt="Gif rigolo qui te félicite quand tu t'inscris"/>
               </div>
             )}
