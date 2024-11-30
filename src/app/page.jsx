@@ -45,7 +45,7 @@ export default async function Index() {
         let la_seance_est_annulee = false
 
         for(let j = 0; j < supertableau.length; j++) {
-          if(DateTime.fromFormat(supertableau[0].title, "dd/LL/yyyy").setLocale('fr').toLocaleString({month: 'long', day: 'numeric', year:'numeric'}) === DateTime.fromISO(date.toISO()).setLocale('fr').toLocaleString({month: 'long', day: 'numeric', year:'numeric'})) {
+          if(DateTime.fromFormat(supertableau[j].title, "dd/LL/yyyy").setLocale('fr').toLocaleString({month: 'long', day: 'numeric', year:'numeric'}) === DateTime.fromISO(date.toISO()).setLocale('fr').toLocaleString({month: 'long', day: 'numeric', year:'numeric'})) {
             if(seance.place === supertableau[j].content.trim()) {
               console.log('ouf')
               la_seance_est_annulee = true
