@@ -1,6 +1,6 @@
 {
-  "commit": "7635ca0183e504947f51594f8caa92758b96f99f",
-  "generated": "2024-11-30T00:35:38.959Z",
+  "commit": "2d57d60c9bbd5484643c2ef273b5629774378f2d",
+  "generated": "2024-11-30T00:38:29.102Z",
   "metadata": [
     {
       "__outstatic": {
@@ -165,6 +165,24 @@
       "slug": "12-12-2024",
       "status": "published",
       "title": "26/12/2024"
+    },
+    {
+      "__outstatic": {
+        "commit": "2d57d60c9bbd5484643c2ef273b5629774378f2d",
+        "hash": "405957055",
+        "path": "outstatic/content/pas-seances/02-01-2025.md"
+      },
+      "author": {
+        "name": "Salim",
+        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
+      },
+      "collection": "pas-seances",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-11-30T00:44:12.307Z",
+      "slug": "02-01-2025",
+      "status": "published",
+      "title": "02/01/2025"
     }
   ]
 }
