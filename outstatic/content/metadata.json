@@ -1,6 +1,6 @@
 {
-  "commit": "10aa81583423412b1f6d26e0357b35045012be14",
-  "generated": "2024-11-30T00:25:36.086Z",
+  "commit": "7635ca0183e504947f51594f8caa92758b96f99f",
+  "generated": "2024-11-30T00:35:38.959Z",
   "metadata": [
     {
       "__outstatic": {
@@ -150,8 +150,8 @@
     },
     {
       "__outstatic": {
-        "commit": "10aa81583423412b1f6d26e0357b35045012be14",
-        "hash": "1522193144",
+        "commit": "7635ca0183e504947f51594f8caa92758b96f99f",
+        "hash": "75222996",
         "path": "outstatic/content/pas-seances/12-12-2024.md"
       },
       "author": {
@@ -164,7 +164,7 @@
       "publishedAt": "2024-11-30T00:30:56.914Z",
       "slug": "12-12-2024",
       "status": "published",
-      "title": "12/12/2024"
+      "title": "26/12/2024"
     }
   ]
 }
