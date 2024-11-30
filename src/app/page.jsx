@@ -8,34 +8,9 @@ import Link from 'next/link'
 
 export default async function Index() {
   const { content, allPosts, allProjects } = await getDataBis()
-/*  const events = [{
-    title: 'Séance hebdomadaire',
-    place: 'Clignancourt',
-    date: '17h00 à 19h00'
-  }, {
-    title: 'Séance hebdomadaire',
-    place: 'Clignancourt',
-    date: '17h00 à 19h00'
-  }, {
-    title: 'Séance hebdomadaire',
-    place: 'Clignancourt',
-    date: '17h00 à 19h00'
-  }, {
-    title: 'Séance hebdomadaire',
-    place: 'Clignancourt',
-    date: '17h00 à 19h00'
-  }, {
-    title: 'Séance hebdomadaire',
-    place: 'Clignancourt',
-    date: '17h00 à 19h00'
-  }, {
-    title: 'Séance hebdomadaire',
-    place: 'Jussieu',
-    date: '17h00 à 19h00'
-  }]
-*/
   const seances_data = await getData()
   const bar_echecs = await getData2()
+  const supertableau = await getData3()
 
   const day_to_number = {
     'lundi': 1,
@@ -47,19 +22,6 @@ export default async function Index() {
     'dimanche' : 7
   }
 
-/*  const seances_hebdomadaires = [
-    {
-      jour: 'mardi',
-      beginHour: '17h00',
-      endHour: '19h00'
-    },
-    {
-      jour: 'jeudi',
-      beginHour: '18h00',
-      endHour: '19h00'
-    }
-  ]
-*/
   function nextSeances() {
     const dates = []
     for(const seance of seances_data) {
@@ -79,15 +41,29 @@ export default async function Index() {
 
       for(let i = 0; i < 8; i++) {
         const date = date_used.plus({days: days_until + 7*i})
-        dates.push({
-          title: 'Séance hebdomadaire',
-          place: seance.place,
-          lieu: seance.lieu,
-          jour: seance.jour,
-          date: '17h00 à 19h00',
-          iso: date.toISO(),
-          horaire: seance.horaire
-        })
+
+        let la_seance_est_annulee = false
+
+        for(let j = 0; j < supertableau.length; j++) {
+          if(DateTime.fromFormat(supertableau[0].title, "dd/LL/yyyy").setLocale('fr').toLocaleString({month: 'long', day: 'numeric', year:'numeric'}) === DateTime.fromISO(date.toISO()).setLocale('fr').toLocaleString({month: 'long', day: 'numeric', year:'numeric'})) {
+            if(seance.place === supertableau[j].content.trim()) {
+              console.log('ouf')
+              la_seance_est_annulee = true
+            }
+          }
+        }
+
+        if(!la_seance_est_annulee) {
+          dates.push({
+            title: 'Séance hebdomadaire',
+            place: seance.place,
+            lieu: seance.lieu,
+            jour: seance.jour,
+            date: '17h00 à 19h00',
+            iso: date.toISO(),
+            horaire: seance.horaire
+          })
+        }
       }
     }
     for(const seance of bar_echecs) {
@@ -248,6 +224,22 @@ async function getData2() {
   const db = await load()
 
   const posts = getDocuments('bar-echecs', ['title', 'content', 'lieu', 'startDate', 'endDate', 'horaire'])
+  console.log('ouais')
+  console.log('-'.repeat(400))
+  console.log(posts)
+  const processing = posts.map(x => {
+    x.jour = x.title.split(' ')[0].toLowerCase()
+    x.place = x.title.split(' ').slice(1).join(' ')
+    return x
+  })
+  console.log(processing)
+  return processing
+}
+
+async function getData3() {
+  const db = await load()
+
+  const posts = getDocuments('pas-seances', ['title', 'content'])
   console.log('ouais')
   console.log('-'.repeat(400))
   console.log(posts)
