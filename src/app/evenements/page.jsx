@@ -80,25 +80,6 @@ export default async function Index() {
             ))}
             </div>
           </div>
-          <div className="mt-12 flex flex-col gap-2"> 
-            <div className="prose lg:prose-xl">
-              <h2>Nos prochains événements</h2>
-            </div>
-            {evenements.length === 0 && (
-              <div className="prose lg:prose-xl">
-                <p>Pas d'événement prévu pour le moment. Revenez plus tard, ça ne devrait pas tarder. :(</p>
-              </div>
-            )}
-          </div>
-            <div className="flex flex-col pt-2 gap-4"> 
-            {evenements.map(seance => (
-              <div className="text-xl p-4 rounded-lg border-black border-2 w-fit bg-blue-400 hover:bg-blue-400/90">
-                <p className="text-xl font-bold">{seance.place}</p>
-                <p>Le <span className="font-bold">{seance.jour}</span> de <span className="font-bold">{seance.horaire}</span></p>
-                <p>Lieu : <span className="font-bold">{seance.lieu}</span></p>
-              </div>
-            ))}
-            </div>
         </section>
       </div>
     </Layout>

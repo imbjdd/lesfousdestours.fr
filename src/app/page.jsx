@@ -5,6 +5,7 @@ import markdownToHtml from '../lib/markdownToHtml'
 import Header from '@/components/Header'
 import { DateTime } from 'luxon'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default async function Index() {
   const { content, allPosts, allProjects } = await getDataBis()
@@ -105,18 +106,14 @@ export default async function Index() {
       <div className="max-w-7xl mx-auto px-5">
         <Header /> 
 
-        <section className="mt-8 lg:mt-16 mb-4 lg:pt-24">
-          <div className="flex flex-col lg:flex-row gap-4 lg:gap-0">
+        <section className="mt-8 mb-4 lg:pt-24">
+          <div className="flex-col lg:flex-row gap-4 lg:gap-0 w-full flex items-center justify-center text-center">
             <div className="lg:w-7/12 flex flex-col gap-8">
-              <h1 className="text-4xl lg:text-8xl  font-super">Les Fous des Tours</h1>
+              <h1 className="text-4xl lg:text-8xl  font-super">A l'université, L'art des <span className="text-white relative"><span className="absolute bottom-0 top-0 -left-1 lg:-left-3 -rotate-1 p-0 px-4 bg-black/90 text-black/90 -right-1 lg:-right-3"></span><span className="relative">échecs</span></span></h1>
               <div className="prose lg:prose-xl">
                 <p>Les Fous des Tours est l’association d’échecs et de jeux de plateaux de Sorbonne Université. Nous invitons étudiants et personnels de tous niveaux à explorer le jeu d’échecs dans une ambiance conviviale et gratuite.</p>
               </div>
               <a href="#nous-rejoindre"><button className="w-full lg:w-fit px-8 py-3 bg-black text-white rounded-lg hover:bg-zinc-800">Nous rejoindre</button></a>
-            </div>
-            <div className="hidden lg:block flex-grow"></div>
-            <div className="hidden lg:block">
-              <img className="hover:scale-110 hover:rotate-12 transition ease-in-out" src="/images/lfdt.png"/>
             </div>
           </div>
           <div className="mt-8 lg:mt-24 flex flex-col lg:flex-row"> 
