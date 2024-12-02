@@ -25,6 +25,7 @@ export default async function Index() {
 
   function nextSeances() {
     const dates = []
+
     for(const seance of seances_data) {
       // pour savoir si on part de DateTime.now() ou bien plutôt de startDate, on part du maximum entre les deux
       let date_used;
@@ -54,7 +55,7 @@ export default async function Index() {
           }
         }
 
-        if(!la_seance_est_annulee) {
+        if(!la_seance_est_annulee && date.toISO() <= DateTime.fromFormat(seance.endDate, "dd/LL/yyyy").toISO()) {
           dates.push({
             title: 'Séance hebdomadaire',
             place: seance.place,
@@ -67,6 +68,7 @@ export default async function Index() {
         }
       }
     }
+
     for(const seance of bar_echecs) {
       console.log(seance)
       // pour savoir si on part de DateTime.now() ou bien plutôt de startDate, on part du maximum entre les deux
