@@ -1,6 +1,6 @@
 {
-  "commit": "261d575d6aa74f161900f03e1aafc49990a58541",
-  "generated": "2024-12-02T19:06:24.198Z",
+  "commit": "1fbdb8c868b4f4b64c1fa1009e0e723bd8be0cee",
+  "generated": "2024-12-02T19:14:19.536Z",
   "metadata": [
     {
       "__outstatic": {
@@ -186,8 +186,8 @@
     },
     {
       "__outstatic": {
-        "commit": "261d575d6aa74f161900f03e1aafc49990a58541",
-        "hash": "417866179",
+        "commit": "1fbdb8c868b4f4b64c1fa1009e0e723bd8be0cee",
+        "hash": "3140510768",
         "path": "outstatic/content/seances-hebdomadaires/mardi-jussieu.md"
       },
       "author": {
@@ -197,12 +197,12 @@
       "collection": "seances-hebdomadaires",
       "coverImage": "",
       "description": "",
-      "endDate": "10/12",
+      "endDate": "31/10/2024",
       "horaire": "18h15 à 20h15",
       "lieu": "24.25.104",
       "publishedAt": "2024-12-02T19:11:30.678Z",
       "slug": "mardi-jussieu",
-      "startDate": "3/12",
+      "startDate": "31/10/2024",
       "status": "published",
       "title": "Mardi Jussieu"
     }
