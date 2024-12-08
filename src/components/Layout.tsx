@@ -8,7 +8,6 @@ type Props = {
 const Layout = ({ children }: Props) => {
   return (
     <>
-      <Banner />
       <div className="">
         <main>{children}</main>
       </div>
