@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 import '../styles/index.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://lfdt.vercel.app'),
+  metadataBase: new URL('https://www.lesfousdestours.fr/'),
   title: {
     default: 'Les Fous des Tours',
     template: '%s | Les Fous des Tours'
