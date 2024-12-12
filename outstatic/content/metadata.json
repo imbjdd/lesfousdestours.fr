@@ -1,6 +1,6 @@
 {
-  "commit": "1fbdb8c868b4f4b64c1fa1009e0e723bd8be0cee",
-  "generated": "2024-12-02T19:14:19.536Z",
+  "commit": "05147fa435d30837965c2477205e79d9b436d903",
+  "generated": "2024-12-12T13:33:17.366Z",
   "metadata": [
     {
       "__outstatic": {
@@ -150,24 +150,6 @@
     },
     {
       "__outstatic": {
-        "commit": "7635ca0183e504947f51594f8caa92758b96f99f",
-        "hash": "75222996",
-        "path": "outstatic/content/pas-seances/12-12-2024.md"
-      },
-      "author": {
-        "name": "Salim",
-        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
-      },
-      "collection": "pas-seances",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-11-30T00:30:56.914Z",
-      "slug": "12-12-2024",
-      "status": "published",
-      "title": "26/12/2024"
-    },
-    {
-      "__outstatic": {
         "commit": "2d57d60c9bbd5484643c2ef273b5629774378f2d",
         "hash": "405957055",
         "path": "outstatic/content/pas-seances/02-01-2025.md"
@@ -205,6 +187,24 @@
       "startDate": "31/10/2024",
       "status": "published",
       "title": "Mardi Jussieu"
+    },
+    {
+      "__outstatic": {
+        "commit": "05147fa435d30837965c2477205e79d9b436d903",
+        "hash": "955777194",
+        "path": "outstatic/content/pas-seances/12-12-2024.md"
+      },
+      "author": {
+        "name": "Salim",
+        "picture": "https://avatars.githubusercontent.com/u/56689216?v=4"
+      },
+      "collection": "pas-seances",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-12-12T13:38:59.382Z",
+      "slug": "12-12-2024",
+      "status": "published",
+      "title": "12/12/2024"
     }
   ]
 }
